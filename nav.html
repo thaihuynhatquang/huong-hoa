@@ -1,0 +1,2662 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap"
+    />
+
+    <style>
+      body {
+        margin: 0;
+        line-height: normal;
+      }
+
+      .popup-overlay {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        inset: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="
+        position: relative;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        opacity: 0;
+        max-width: 90%;
+        overflow: auto;
+        text-align: left;
+        font-size: 0.88rem;
+        color: rgba(22, 28, 36, 0.9);
+        font-family: Inter;
+      "
+      data-animate-on-scroll
+    >
+      <div
+        style="
+          flex: 1;
+          background-color: #fff;
+          border-right: 1px solid rgba(22, 28, 36, 0.12);
+          box-sizing: border-box;
+          width: 18.5rem;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+          padding: 1rem;
+        "
+      >
+        <div
+          style="
+            align-self: stretch;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 0.75rem;
+          "
+        >
+          <div
+            style="
+              align-self: stretch;
+              display: flex;
+              flex-direction: row;
+              align-items: flex-start;
+              justify-content: flex-start;
+              padding: 0.5rem 1rem;
+              font-size: 1.25rem;
+            "
+          >
+            <div
+              style="position: relative; line-height: 1.75rem; font-weight: 600"
+            >
+              HUONG-HOA
+            </div>
+          </div>
+          <div
+            style="
+              align-self: stretch;
+              display: none;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              gap: 0.5rem;
+              color: rgba(22, 28, 36, 0.8);
+            "
+          >
+            <div
+              style="
+                align-self: stretch;
+                border-radius: 8px;
+                background-color: #fff;
+                border: 1px solid rgba(22, 28, 36, 0.2);
+                box-sizing: border-box;
+                height: 3rem;
+                overflow: hidden;
+                flex-shrink: 0;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                padding: 0rem 1rem;
+                gap: 0.75rem;
+              "
+            >
+              <div
+                style="
+                  border-radius: 4px;
+                  display: flex;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  position: relative;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 1.25rem;
+                    height: 1.25rem;
+                    z-index: 0;
+                  "
+                  alt=""
+                  src="./public/media-styleicon-only.svg"
+                />
+
+                <img
+                  style="
+                    position: absolute;
+                    margin: 0 !important;
+                    height: 100%;
+                    width: 100%;
+                    top: 0%;
+                    right: 0%;
+                    bottom: 0%;
+                    left: 0%;
+                    border-radius: 8px;
+                    max-width: 100%;
+                    overflow: hidden;
+                    max-height: 100%;
+                    display: none;
+                    z-index: 1;
+                  "
+                  alt=""
+                  src="./public/badge.svg"
+                />
+              </div>
+              <div
+                style="
+                  display: none;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: flex-start;
+                  gap: 0.75rem;
+                "
+              >
+                <div
+                  style="
+                    border-radius: 4px;
+                    overflow: hidden;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                >
+                  <div
+                    style="
+                      display: flex;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: flex-start;
+                      gap: 0.5rem;
+                    "
+                  >
+                    <img
+                      style="
+                        position: relative;
+                        width: 1rem;
+                        height: 1rem;
+                        overflow: hidden;
+                        flex-shrink: 0;
+                        display: none;
+                      "
+                      alt=""
+                      src="./public/iconfilledappsettings.svg"
+                    />
+
+                    <div style="position: relative; line-height: 1.38rem">
+                      http://
+                    </div>
+                    <img
+                      style="
+                        position: relative;
+                        width: 1rem;
+                        height: 1rem;
+                        overflow: hidden;
+                        flex-shrink: 0;
+                      "
+                      alt=""
+                      src="./public/iconoutlinedirectiondownarrow.svg"
+                    />
+                  </div>
+                </div>
+                <div
+                  style="
+                    position: relative;
+                    background-color: rgba(22, 28, 36, 0.2);
+                    width: 0.06rem;
+                    height: 1.25rem;
+                  "
+                ></div>
+              </div>
+              <div
+                style="
+                  flex: 1;
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: flex-end;
+                  gap: 0.75rem;
+                  color: rgba(22, 28, 36, 0.4);
+                "
+              >
+                <div
+                  style="
+                    flex: 1;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 0.25rem;
+                  "
+                >
+                  <div
+                    style="
+                      overflow: hidden;
+                      display: flex;
+                      flex-direction: column;
+                      align-items: flex-start;
+                      justify-content: center;
+                      gap: 0.5rem;
+                    "
+                  >
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: flex-start;
+                        gap: 0.25rem;
+                      "
+                    >
+                      <div style="position: relative; line-height: 1.38rem">
+                        Search
+                      </div>
+                      <div
+                        style="
+                          position: relative;
+                          font-size: 0.75rem;
+                          line-height: 1.13rem;
+                          color: rgba(22, 28, 36, 0.64);
+                          display: none;
+                        "
+                      >
+                        Subtitle
+                      </div>
+                    </div>
+                    <div
+                      style="
+                        position: relative;
+                        line-height: 1.38rem;
+                        color: rgba(22, 28, 36, 0.8);
+                        display: none;
+                      "
+                    >
+                      Body content
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      overflow: hidden;
+                      display: none;
+                      flex-direction: column;
+                      align-items: flex-start;
+                      justify-content: center;
+                      gap: 0.5rem;
+                      color: #ff3d3d;
+                    "
+                  >
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: flex-start;
+                        gap: 0.25rem;
+                      "
+                    >
+                      <div style="position: relative; line-height: 1.38rem">
+                        *
+                      </div>
+                      <div
+                        style="
+                          position: relative;
+                          font-size: 0.75rem;
+                          line-height: 1.13rem;
+                          color: rgba(22, 28, 36, 0.64);
+                          display: none;
+                        "
+                      >
+                        Subtitle
+                      </div>
+                    </div>
+                    <div
+                      style="
+                        position: relative;
+                        line-height: 1.38rem;
+                        color: rgba(22, 28, 36, 0.8);
+                        display: none;
+                      "
+                    >
+                      Body content
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style="
+                    overflow: hidden;
+                    display: none;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                >
+                  <div
+                    style="
+                      display: flex;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: center;
+                    "
+                  >
+                    <img
+                      style="
+                        position: relative;
+                        width: 1rem;
+                        height: 1rem;
+                        overflow: hidden;
+                        flex-shrink: 0;
+                      "
+                      alt=""
+                      src="./public/iconoutlinedirectiondownarrow.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                style="
+                  display: none;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: flex-start;
+                  gap: 0.75rem;
+                "
+              >
+                <div
+                  style="
+                    position: relative;
+                    background-color: rgba(22, 28, 36, 0.2);
+                    width: 0.06rem;
+                    height: 1.25rem;
+                  "
+                ></div>
+                <div
+                  style="
+                    border-radius: 4px;
+                    overflow: hidden;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                >
+                  <div
+                    style="
+                      display: flex;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: flex-start;
+                      gap: 0.5rem;
+                    "
+                  >
+                    <img
+                      style="
+                        position: relative;
+                        width: 1rem;
+                        height: 1rem;
+                        overflow: hidden;
+                        flex-shrink: 0;
+                        display: none;
+                      "
+                      alt=""
+                      src="./public/iconfilledappsettings.svg"
+                    />
+
+                    <div style="position: relative; line-height: 1.38rem">
+                      .com
+                    </div>
+                    <img
+                      style="
+                        position: relative;
+                        width: 1rem;
+                        height: 1rem;
+                        overflow: hidden;
+                        flex-shrink: 0;
+                      "
+                      alt=""
+                      src="./public/iconoutlinedirectiondownarrow.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              style="
+                align-self: stretch;
+                overflow: hidden;
+                display: none;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                gap: 0.5rem;
+                font-size: 0.75rem;
+                color: rgba(22, 28, 36, 0.64);
+              "
+            >
+              <div
+                style="
+                  align-self: stretch;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  gap: 0.25rem;
+                "
+              >
+                <div
+                  style="
+                    align-self: stretch;
+                    position: relative;
+                    line-height: 1.13rem;
+                  "
+                >
+                  Sub message line up to 2 line
+                </div>
+                <div
+                  style="
+                    align-self: stretch;
+                    position: relative;
+                    line-height: 1.13rem;
+                    display: none;
+                    height: 1.13rem;
+                    flex-shrink: 0;
+                  "
+                >
+                  Subtitle
+                </div>
+              </div>
+              <div
+                style="
+                  align-self: stretch;
+                  position: relative;
+                  font-size: 0.88rem;
+                  line-height: 1.38rem;
+                  color: rgba(22, 28, 36, 0.8);
+                  display: none;
+                "
+              >
+                Body content
+              </div>
+            </div>
+          </div>
+          <div
+            style="
+              align-self: stretch;
+              flex: 1;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: flex-start;
+            "
+          >
+            <div
+              style="
+                align-self: stretch;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                color: #161c24;
+              "
+            >
+              <div
+                style="
+                  background-color: rgba(22, 28, 36, 0.08);
+                  width: 16.5rem;
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: flex-start;
+                  padding: 1rem;
+                  box-sizing: border-box;
+                  gap: 0.75rem;
+                "
+              >
+                <div
+                  style="
+                    align-self: stretch;
+                    width: 1.25rem;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                >
+                  <div
+                    style="
+                      border-radius: 4px;
+                      display: flex;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: flex-start;
+                      position: relative;
+                    "
+                  >
+                    <img
+                      style="
+                        position: relative;
+                        width: 1.25rem;
+                        height: 1.25rem;
+                        z-index: 0;
+                      "
+                      alt=""
+                      src="./public/media-styleicon-only15.svg"
+                    />
+
+                    <img
+                      style="
+                        position: absolute;
+                        margin: 0 !important;
+                        height: 100%;
+                        width: 100%;
+                        top: 0%;
+                        right: 0%;
+                        bottom: 0%;
+                        left: 0%;
+                        border-radius: 8px;
+                        max-width: 100%;
+                        overflow: hidden;
+                        max-height: 100%;
+                        display: none;
+                        z-index: 1;
+                      "
+                      alt=""
+                      src="./public/badge.svg"
+                    />
+                  </div>
+                </div>
+                <div
+                  style="
+                    flex: 1;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 0.75rem;
+                  "
+                >
+                  <div
+                    style="
+                      flex: 1;
+                      display: flex;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: flex-start;
+                      gap: 0.5rem;
+                    "
+                  >
+                    <div
+                      style="
+                        flex: 1;
+                        overflow: hidden;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+                        gap: 0.5rem;
+                      "
+                    >
+                      <div
+                        style="
+                          align-self: stretch;
+                          display: flex;
+                          flex-direction: column;
+                          align-items: flex-start;
+                          justify-content: flex-start;
+                          gap: 0.25rem;
+                        "
+                      >
+                        <div
+                          style="
+                            align-self: stretch;
+                            position: relative;
+                            line-height: 1.38rem;
+                            font-weight: 500;
+                          "
+                        >
+                          Tổng quan
+                        </div>
+                        <div
+                          style="
+                            align-self: stretch;
+                            position: relative;
+                            font-size: 0.75rem;
+                            line-height: 1.13rem;
+                            color: rgba(22, 28, 36, 0.64);
+                            display: none;
+                          "
+                        >
+                          Subtitle
+                        </div>
+                      </div>
+                      <div
+                        style="
+                          align-self: stretch;
+                          position: relative;
+                          line-height: 1.38rem;
+                          color: rgba(22, 28, 36, 0.8);
+                          display: none;
+                        "
+                      >
+                        Body content
+                      </div>
+                    </div>
+                    <div
+                      style="
+                        border-radius: 100px;
+                        background-color: #ff3d3d;
+                        overflow: hidden;
+                        display: none;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 0.13rem 0.5rem;
+                        font-size: 0.75rem;
+                        color: #fff;
+                      "
+                    >
+                      <div
+                        style="
+                          position: relative;
+                          line-height: 1.13rem;
+                          font-weight: 600;
+                        "
+                      >
+                        10
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      border-radius: 100px;
+                      background-color: #ff3d3d;
+                      overflow: hidden;
+                      display: none;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: center;
+                      padding: 0.13rem 0.5rem;
+                      font-size: 0.75rem;
+                      color: #fff;
+                    "
+                  >
+                    <div
+                      style="
+                        position: relative;
+                        line-height: 1.13rem;
+                        font-weight: 600;
+                      "
+                    >
+                      10
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      border-radius: 4px;
+                      height: 1.38rem;
+                      display: none;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: center;
+                      position: relative;
+                    "
+                  >
+                    <img
+                      style="
+                        position: relative;
+                        width: 1rem;
+                        height: 1rem;
+                        z-index: 0;
+                      "
+                      alt=""
+                      src="./public/media-styleicon-only6.svg"
+                    />
+
+                    <img
+                      style="
+                        position: absolute;
+                        margin: 0 !important;
+                        top: calc(50% - 8px);
+                        left: calc(50% - 8px);
+                        border-radius: 8px;
+                        width: 1rem;
+                        height: 1rem;
+                        display: none;
+                        z-index: 1;
+                      "
+                      alt=""
+                      src="./public/badge1.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              style="
+                align-self: stretch;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+              "
+            >
+              <div
+                style="
+                  border-radius: 8px;
+                  width: 16.5rem;
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: flex-start;
+                  padding: 1rem;
+                  box-sizing: border-box;
+                  gap: 0.75rem;
+                "
+              >
+                <div
+                  style="
+                    align-self: stretch;
+                    width: 1.25rem;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                >
+                  <div
+                    style="
+                      border-radius: 4px;
+                      display: flex;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: flex-start;
+                      position: relative;
+                    "
+                  >
+                    <img
+                      style="
+                        position: relative;
+                        width: 1.25rem;
+                        height: 1.25rem;
+                        z-index: 0;
+                      "
+                      alt=""
+                      src="./public/media-styleicon-only3.svg"
+                    />
+
+                    <img
+                      style="
+                        position: absolute;
+                        margin: 0 !important;
+                        height: 100%;
+                        width: 100%;
+                        top: 0%;
+                        right: 0%;
+                        bottom: 0%;
+                        left: 0%;
+                        border-radius: 8px;
+                        max-width: 100%;
+                        overflow: hidden;
+                        max-height: 100%;
+                        display: none;
+                        z-index: 1;
+                      "
+                      alt=""
+                      src="./public/badge.svg"
+                    />
+                  </div>
+                </div>
+                <div
+                  style="
+                    flex: 1;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 0.75rem;
+                  "
+                >
+                  <div
+                    style="
+                      flex: 1;
+                      display: flex;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: flex-start;
+                      gap: 0.5rem;
+                    "
+                  >
+                    <div
+                      style="
+                        flex: 1;
+                        overflow: hidden;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+                        gap: 0.5rem;
+                      "
+                    >
+                      <div
+                        style="
+                          align-self: stretch;
+                          display: flex;
+                          flex-direction: column;
+                          align-items: flex-start;
+                          justify-content: flex-start;
+                          gap: 0.25rem;
+                        "
+                      >
+                        <div
+                          style="
+                            align-self: stretch;
+                            position: relative;
+                            line-height: 1.38rem;
+                            font-weight: 500;
+                          "
+                        >
+                          Sản phẩm
+                        </div>
+                        <div
+                          style="
+                            align-self: stretch;
+                            position: relative;
+                            font-size: 0.75rem;
+                            line-height: 1.13rem;
+                            color: rgba(22, 28, 36, 0.64);
+                            display: none;
+                          "
+                        >
+                          Subtitle
+                        </div>
+                      </div>
+                      <div
+                        style="
+                          align-self: stretch;
+                          position: relative;
+                          line-height: 1.38rem;
+                          color: rgba(22, 28, 36, 0.8);
+                          display: none;
+                        "
+                      >
+                        Body content
+                      </div>
+                    </div>
+                    <div
+                      style="
+                        border-radius: 100px;
+                        background-color: #ff3d3d;
+                        overflow: hidden;
+                        display: none;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 0.13rem 0.5rem;
+                        font-size: 0.75rem;
+                        color: #fff;
+                      "
+                    >
+                      <div
+                        style="
+                          position: relative;
+                          line-height: 1.13rem;
+                          font-weight: 600;
+                        "
+                      >
+                        10
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      border-radius: 100px;
+                      background-color: #ff3d3d;
+                      overflow: hidden;
+                      display: none;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: center;
+                      padding: 0.13rem 0.5rem;
+                      font-size: 0.75rem;
+                      color: #fff;
+                    "
+                  >
+                    <div
+                      style="
+                        position: relative;
+                        line-height: 1.13rem;
+                        font-weight: 600;
+                      "
+                    >
+                      10
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      border-radius: 4px;
+                      height: 1.38rem;
+                      display: none;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: center;
+                      position: relative;
+                    "
+                  >
+                    <img
+                      style="
+                        position: relative;
+                        width: 1rem;
+                        height: 1rem;
+                        z-index: 0;
+                      "
+                      alt=""
+                      src="./public/media-styleicon-only2.svg"
+                    />
+
+                    <img
+                      style="
+                        position: absolute;
+                        margin: 0 !important;
+                        top: calc(50% - 8px);
+                        left: calc(50% - 8px);
+                        border-radius: 8px;
+                        width: 1rem;
+                        height: 1rem;
+                        display: none;
+                        z-index: 1;
+                      "
+                      alt=""
+                      src="./public/badge1.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              style="
+                align-self: stretch;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+              "
+            >
+              <div
+                style="
+                  align-self: stretch;
+                  border-radius: 8px;
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: flex-start;
+                  padding: 1rem;
+                  gap: 0.75rem;
+                "
+              >
+                <div
+                  style="
+                    align-self: stretch;
+                    width: 1.25rem;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                >
+                  <div
+                    style="
+                      border-radius: 4px;
+                      display: flex;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: flex-start;
+                      position: relative;
+                    "
+                  >
+                    <img
+                      style="
+                        position: relative;
+                        width: 1.25rem;
+                        height: 1.25rem;
+                        z-index: 0;
+                      "
+                      alt=""
+                      src="./public/media-styleicon-only4.svg"
+                    />
+
+                    <img
+                      style="
+                        position: absolute;
+                        margin: 0 !important;
+                        height: 100%;
+                        width: 100%;
+                        top: 0%;
+                        right: 0%;
+                        bottom: 0%;
+                        left: 0%;
+                        border-radius: 8px;
+                        max-width: 100%;
+                        overflow: hidden;
+                        max-height: 100%;
+                        display: none;
+                        z-index: 1;
+                      "
+                      alt=""
+                      src="./public/badge.svg"
+                    />
+                  </div>
+                </div>
+                <div
+                  style="
+                    flex: 1;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 0.75rem;
+                  "
+                >
+                  <div
+                    style="
+                      flex: 1;
+                      display: flex;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: flex-start;
+                      gap: 0.5rem;
+                    "
+                  >
+                    <div
+                      style="
+                        flex: 1;
+                        overflow: hidden;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+                        gap: 0.5rem;
+                      "
+                    >
+                      <div
+                        style="
+                          align-self: stretch;
+                          display: flex;
+                          flex-direction: column;
+                          align-items: flex-start;
+                          justify-content: flex-start;
+                          gap: 0.25rem;
+                        "
+                      >
+                        <div
+                          style="
+                            align-self: stretch;
+                            position: relative;
+                            line-height: 1.38rem;
+                            font-weight: 500;
+                          "
+                        >
+                          Đơn hàng
+                        </div>
+                        <div
+                          style="
+                            align-self: stretch;
+                            position: relative;
+                            font-size: 0.75rem;
+                            line-height: 1.13rem;
+                            color: rgba(22, 28, 36, 0.64);
+                            display: none;
+                          "
+                        >
+                          Subtitle
+                        </div>
+                      </div>
+                      <div
+                        style="
+                          align-self: stretch;
+                          position: relative;
+                          line-height: 1.38rem;
+                          color: rgba(22, 28, 36, 0.8);
+                          display: none;
+                        "
+                      >
+                        Body content
+                      </div>
+                    </div>
+                    <div
+                      style="
+                        border-radius: 100px;
+                        background-color: #ff3d3d;
+                        overflow: hidden;
+                        display: none;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 0.13rem 0.5rem;
+                        font-size: 0.75rem;
+                        color: #fff;
+                      "
+                    >
+                      <div
+                        style="
+                          position: relative;
+                          line-height: 1.13rem;
+                          font-weight: 600;
+                        "
+                      >
+                        10
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      border-radius: 100px;
+                      background-color: #ff3d3d;
+                      overflow: hidden;
+                      display: none;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: center;
+                      padding: 0.13rem 0.5rem;
+                      font-size: 0.75rem;
+                      color: #fff;
+                    "
+                  >
+                    <div
+                      style="
+                        position: relative;
+                        line-height: 1.13rem;
+                        font-weight: 600;
+                      "
+                    >
+                      10
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      border-radius: 4px;
+                      height: 1.38rem;
+                      display: none;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: center;
+                      position: relative;
+                    "
+                  >
+                    <img
+                      style="
+                        position: relative;
+                        width: 1rem;
+                        height: 1rem;
+                        z-index: 0;
+                      "
+                      alt=""
+                      src="./public/media-styleicon-only2.svg"
+                    />
+
+                    <img
+                      style="
+                        position: absolute;
+                        margin: 0 !important;
+                        top: calc(50% - 8px);
+                        left: calc(50% - 8px);
+                        border-radius: 8px;
+                        width: 1rem;
+                        height: 1rem;
+                        display: none;
+                        z-index: 1;
+                      "
+                      alt=""
+                      src="./public/badge1.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              style="
+                align-self: stretch;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+              "
+            >
+              <div
+                style="
+                  align-self: stretch;
+                  border-radius: 8px;
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: flex-start;
+                  padding: 1rem;
+                  gap: 0.75rem;
+                "
+              >
+                <div
+                  style="
+                    align-self: stretch;
+                    width: 1.25rem;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                >
+                  <div
+                    style="
+                      border-radius: 4px;
+                      display: flex;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: flex-start;
+                      position: relative;
+                    "
+                  >
+                    <img
+                      style="
+                        position: relative;
+                        width: 1.25rem;
+                        height: 1.25rem;
+                        z-index: 0;
+                      "
+                      alt=""
+                      src="./public/media-styleicon-only5.svg"
+                    />
+
+                    <img
+                      style="
+                        position: absolute;
+                        margin: 0 !important;
+                        height: 100%;
+                        width: 100%;
+                        top: 0%;
+                        right: 0%;
+                        bottom: 0%;
+                        left: 0%;
+                        border-radius: 8px;
+                        max-width: 100%;
+                        overflow: hidden;
+                        max-height: 100%;
+                        display: none;
+                        z-index: 1;
+                      "
+                      alt=""
+                      src="./public/badge.svg"
+                    />
+                  </div>
+                </div>
+                <div
+                  style="
+                    flex: 1;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 0.75rem;
+                  "
+                >
+                  <div
+                    style="
+                      flex: 1;
+                      display: flex;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: flex-start;
+                      gap: 0.5rem;
+                    "
+                  >
+                    <div
+                      style="
+                        flex: 1;
+                        overflow: hidden;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+                        gap: 0.5rem;
+                      "
+                    >
+                      <div
+                        style="
+                          align-self: stretch;
+                          display: flex;
+                          flex-direction: column;
+                          align-items: flex-start;
+                          justify-content: flex-start;
+                          gap: 0.25rem;
+                        "
+                      >
+                        <div
+                          style="
+                            align-self: stretch;
+                            position: relative;
+                            line-height: 1.38rem;
+                            font-weight: 500;
+                          "
+                        >
+                          Khách hàng
+                        </div>
+                        <div
+                          style="
+                            align-self: stretch;
+                            position: relative;
+                            font-size: 0.75rem;
+                            line-height: 1.13rem;
+                            color: rgba(22, 28, 36, 0.64);
+                            display: none;
+                          "
+                        >
+                          Subtitle
+                        </div>
+                      </div>
+                      <div
+                        style="
+                          align-self: stretch;
+                          position: relative;
+                          line-height: 1.38rem;
+                          color: rgba(22, 28, 36, 0.8);
+                          display: none;
+                        "
+                      >
+                        Body content
+                      </div>
+                    </div>
+                    <div
+                      style="
+                        border-radius: 100px;
+                        background-color: #ff3d3d;
+                        overflow: hidden;
+                        display: none;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 0.13rem 0.5rem;
+                        font-size: 0.75rem;
+                        color: #fff;
+                      "
+                    >
+                      <div
+                        style="
+                          position: relative;
+                          line-height: 1.13rem;
+                          font-weight: 600;
+                        "
+                      >
+                        10
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      border-radius: 100px;
+                      background-color: #ff3d3d;
+                      overflow: hidden;
+                      display: none;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: center;
+                      padding: 0.13rem 0.5rem;
+                      font-size: 0.75rem;
+                      color: #fff;
+                    "
+                  >
+                    <div
+                      style="
+                        position: relative;
+                        line-height: 1.13rem;
+                        font-weight: 600;
+                      "
+                    >
+                      10
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      border-radius: 4px;
+                      height: 1.38rem;
+                      display: none;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: center;
+                      position: relative;
+                    "
+                  >
+                    <img
+                      style="
+                        position: relative;
+                        width: 1rem;
+                        height: 1rem;
+                        z-index: 0;
+                      "
+                      alt=""
+                      src="./public/media-styleicon-only2.svg"
+                    />
+
+                    <img
+                      style="
+                        position: absolute;
+                        margin: 0 !important;
+                        top: calc(50% - 8px);
+                        left: calc(50% - 8px);
+                        border-radius: 8px;
+                        width: 1rem;
+                        height: 1rem;
+                        display: none;
+                        z-index: 1;
+                      "
+                      alt=""
+                      src="./public/badge1.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              style="
+                align-self: stretch;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+              "
+            >
+              <div
+                style="
+                  align-self: stretch;
+                  border-radius: 8px;
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: flex-start;
+                  padding: 1rem;
+                  gap: 0.75rem;
+                "
+              >
+                <div
+                  style="
+                    align-self: stretch;
+                    width: 1.25rem;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                >
+                  <div
+                    style="
+                      border-radius: 4px;
+                      display: flex;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: flex-start;
+                      position: relative;
+                    "
+                  >
+                    <img
+                      style="
+                        position: relative;
+                        width: 1.25rem;
+                        height: 1.25rem;
+                        z-index: 0;
+                      "
+                      alt=""
+                      src="./public/media-styleicon-only7.svg"
+                    />
+
+                    <img
+                      style="
+                        position: absolute;
+                        margin: 0 !important;
+                        height: 100%;
+                        width: 100%;
+                        top: 0%;
+                        right: 0%;
+                        bottom: 0%;
+                        left: 0%;
+                        border-radius: 8px;
+                        max-width: 100%;
+                        overflow: hidden;
+                        max-height: 100%;
+                        display: none;
+                        z-index: 1;
+                      "
+                      alt=""
+                      src="./public/badge.svg"
+                    />
+                  </div>
+                </div>
+                <div
+                  style="
+                    flex: 1;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 0.75rem;
+                  "
+                >
+                  <div
+                    style="
+                      flex: 1;
+                      display: flex;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: flex-start;
+                      gap: 0.5rem;
+                    "
+                  >
+                    <div
+                      style="
+                        flex: 1;
+                        overflow: hidden;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+                        gap: 0.5rem;
+                      "
+                    >
+                      <div
+                        style="
+                          align-self: stretch;
+                          display: flex;
+                          flex-direction: column;
+                          align-items: flex-start;
+                          justify-content: flex-start;
+                          gap: 0.25rem;
+                        "
+                      >
+                        <div
+                          style="
+                            align-self: stretch;
+                            position: relative;
+                            line-height: 1.38rem;
+                            font-weight: 500;
+                          "
+                        >
+                          Vận chuyển
+                        </div>
+                        <div
+                          style="
+                            align-self: stretch;
+                            position: relative;
+                            font-size: 0.75rem;
+                            line-height: 1.13rem;
+                            color: rgba(22, 28, 36, 0.64);
+                            display: none;
+                          "
+                        >
+                          Subtitle
+                        </div>
+                      </div>
+                      <div
+                        style="
+                          align-self: stretch;
+                          position: relative;
+                          line-height: 1.38rem;
+                          color: rgba(22, 28, 36, 0.8);
+                          display: none;
+                        "
+                      >
+                        Body content
+                      </div>
+                    </div>
+                    <div
+                      style="
+                        border-radius: 100px;
+                        background-color: #ff3d3d;
+                        overflow: hidden;
+                        display: none;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 0.13rem 0.5rem;
+                        font-size: 0.75rem;
+                        color: #fff;
+                      "
+                    >
+                      <div
+                        style="
+                          position: relative;
+                          line-height: 1.13rem;
+                          font-weight: 600;
+                        "
+                      >
+                        10
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      border-radius: 100px;
+                      background-color: #ff3d3d;
+                      overflow: hidden;
+                      display: none;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: center;
+                      padding: 0.13rem 0.5rem;
+                      font-size: 0.75rem;
+                      color: #fff;
+                    "
+                  >
+                    <div
+                      style="
+                        position: relative;
+                        line-height: 1.13rem;
+                        font-weight: 600;
+                      "
+                    >
+                      10
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      border-radius: 4px;
+                      height: 1.38rem;
+                      display: none;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: center;
+                      position: relative;
+                    "
+                  >
+                    <img
+                      style="
+                        position: relative;
+                        width: 1rem;
+                        height: 1rem;
+                        z-index: 0;
+                      "
+                      alt=""
+                      src="./public/media-styleicon-only2.svg"
+                    />
+
+                    <img
+                      style="
+                        position: absolute;
+                        margin: 0 !important;
+                        top: calc(50% - 8px);
+                        left: calc(50% - 8px);
+                        border-radius: 8px;
+                        width: 1rem;
+                        height: 1rem;
+                        display: none;
+                        z-index: 1;
+                      "
+                      alt=""
+                      src="./public/badge1.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              style="
+                align-self: stretch;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+              "
+            >
+              <div
+                style="
+                  align-self: stretch;
+                  border-radius: 8px;
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: flex-start;
+                  padding: 1rem;
+                  gap: 0.75rem;
+                "
+              >
+                <div
+                  style="
+                    align-self: stretch;
+                    width: 1.25rem;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                >
+                  <div
+                    style="
+                      border-radius: 4px;
+                      display: flex;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: flex-start;
+                      position: relative;
+                    "
+                  >
+                    <img
+                      style="
+                        position: relative;
+                        width: 1.25rem;
+                        height: 1.25rem;
+                        z-index: 0;
+                      "
+                      alt=""
+                      src="./public/media-styleicon-only8.svg"
+                    />
+
+                    <img
+                      style="
+                        position: absolute;
+                        margin: 0 !important;
+                        height: 100%;
+                        width: 100%;
+                        top: 0%;
+                        right: 0%;
+                        bottom: 0%;
+                        left: 0%;
+                        border-radius: 8px;
+                        max-width: 100%;
+                        overflow: hidden;
+                        max-height: 100%;
+                        display: none;
+                        z-index: 1;
+                      "
+                      alt=""
+                      src="./public/badge.svg"
+                    />
+                  </div>
+                </div>
+                <div
+                  style="
+                    flex: 1;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 0.75rem;
+                  "
+                >
+                  <div
+                    style="
+                      flex: 1;
+                      display: flex;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: flex-start;
+                      gap: 0.5rem;
+                    "
+                  >
+                    <div
+                      style="
+                        flex: 1;
+                        overflow: hidden;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+                        gap: 0.5rem;
+                      "
+                    >
+                      <div
+                        style="
+                          align-self: stretch;
+                          display: flex;
+                          flex-direction: column;
+                          align-items: flex-start;
+                          justify-content: flex-start;
+                          gap: 0.25rem;
+                        "
+                      >
+                        <div
+                          style="
+                            align-self: stretch;
+                            position: relative;
+                            line-height: 1.38rem;
+                            font-weight: 500;
+                          "
+                        >
+                          Tài chính
+                        </div>
+                        <div
+                          style="
+                            align-self: stretch;
+                            position: relative;
+                            font-size: 0.75rem;
+                            line-height: 1.13rem;
+                            color: rgba(22, 28, 36, 0.64);
+                            display: none;
+                          "
+                        >
+                          Subtitle
+                        </div>
+                      </div>
+                      <div
+                        style="
+                          align-self: stretch;
+                          position: relative;
+                          line-height: 1.38rem;
+                          color: rgba(22, 28, 36, 0.8);
+                          display: none;
+                        "
+                      >
+                        Body content
+                      </div>
+                    </div>
+                    <div
+                      style="
+                        border-radius: 100px;
+                        background-color: #ff3d3d;
+                        overflow: hidden;
+                        display: none;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 0.13rem 0.5rem;
+                        font-size: 0.75rem;
+                        color: #fff;
+                      "
+                    >
+                      <div
+                        style="
+                          position: relative;
+                          line-height: 1.13rem;
+                          font-weight: 600;
+                        "
+                      >
+                        10
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      border-radius: 100px;
+                      background-color: #ff3d3d;
+                      overflow: hidden;
+                      display: none;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: center;
+                      padding: 0.13rem 0.5rem;
+                      font-size: 0.75rem;
+                      color: #fff;
+                    "
+                  >
+                    <div
+                      style="
+                        position: relative;
+                        line-height: 1.13rem;
+                        font-weight: 600;
+                      "
+                    >
+                      10
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      border-radius: 4px;
+                      height: 1.38rem;
+                      display: none;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: center;
+                      position: relative;
+                    "
+                  >
+                    <img
+                      style="
+                        position: relative;
+                        width: 1rem;
+                        height: 1rem;
+                        z-index: 0;
+                      "
+                      alt=""
+                      src="./public/media-styleicon-only2.svg"
+                    />
+
+                    <img
+                      style="
+                        position: absolute;
+                        margin: 0 !important;
+                        top: calc(50% - 8px);
+                        left: calc(50% - 8px);
+                        border-radius: 8px;
+                        width: 1rem;
+                        height: 1rem;
+                        display: none;
+                        z-index: 1;
+                      "
+                      alt=""
+                      src="./public/badge1.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              style="
+                align-self: stretch;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+              "
+            >
+              <div
+                style="
+                  align-self: stretch;
+                  border-radius: 8px;
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: flex-start;
+                  padding: 1rem;
+                  gap: 0.75rem;
+                "
+              >
+                <div
+                  style="
+                    align-self: stretch;
+                    width: 1.25rem;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                >
+                  <div
+                    style="
+                      border-radius: 4px;
+                      display: flex;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: flex-start;
+                      position: relative;
+                    "
+                  >
+                    <img
+                      style="
+                        position: relative;
+                        width: 1.25rem;
+                        height: 1.25rem;
+                        z-index: 0;
+                      "
+                      alt=""
+                      src="./public/media-styleicon-only9.svg"
+                    />
+
+                    <img
+                      style="
+                        position: absolute;
+                        margin: 0 !important;
+                        height: 100%;
+                        width: 100%;
+                        top: 0%;
+                        right: 0%;
+                        bottom: 0%;
+                        left: 0%;
+                        border-radius: 8px;
+                        max-width: 100%;
+                        overflow: hidden;
+                        max-height: 100%;
+                        display: none;
+                        z-index: 1;
+                      "
+                      alt=""
+                      src="./public/badge.svg"
+                    />
+                  </div>
+                </div>
+                <div
+                  style="
+                    flex: 1;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 0.75rem;
+                  "
+                >
+                  <div
+                    style="
+                      flex: 1;
+                      display: flex;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: flex-start;
+                      gap: 0.5rem;
+                    "
+                  >
+                    <div
+                      style="
+                        flex: 1;
+                        overflow: hidden;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+                        gap: 0.5rem;
+                      "
+                    >
+                      <div
+                        style="
+                          align-self: stretch;
+                          display: flex;
+                          flex-direction: column;
+                          align-items: flex-start;
+                          justify-content: flex-start;
+                          gap: 0.25rem;
+                        "
+                      >
+                        <div
+                          style="
+                            align-self: stretch;
+                            position: relative;
+                            line-height: 1.38rem;
+                            font-weight: 500;
+                          "
+                        >
+                          Phân tích
+                        </div>
+                        <div
+                          style="
+                            align-self: stretch;
+                            position: relative;
+                            font-size: 0.75rem;
+                            line-height: 1.13rem;
+                            color: rgba(22, 28, 36, 0.64);
+                            display: none;
+                          "
+                        >
+                          Subtitle
+                        </div>
+                      </div>
+                      <div
+                        style="
+                          align-self: stretch;
+                          position: relative;
+                          line-height: 1.38rem;
+                          color: rgba(22, 28, 36, 0.8);
+                          display: none;
+                        "
+                      >
+                        Body content
+                      </div>
+                    </div>
+                    <div
+                      style="
+                        border-radius: 100px;
+                        background-color: #ff3d3d;
+                        overflow: hidden;
+                        display: none;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 0.13rem 0.5rem;
+                        font-size: 0.75rem;
+                        color: #fff;
+                      "
+                    >
+                      <div
+                        style="
+                          position: relative;
+                          line-height: 1.13rem;
+                          font-weight: 600;
+                        "
+                      >
+                        10
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      border-radius: 100px;
+                      background-color: #ff3d3d;
+                      overflow: hidden;
+                      display: none;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: center;
+                      padding: 0.13rem 0.5rem;
+                      font-size: 0.75rem;
+                      color: #fff;
+                    "
+                  >
+                    <div
+                      style="
+                        position: relative;
+                        line-height: 1.13rem;
+                        font-weight: 600;
+                      "
+                    >
+                      10
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      border-radius: 4px;
+                      height: 1.38rem;
+                      display: none;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: center;
+                      position: relative;
+                    "
+                  >
+                    <img
+                      style="
+                        position: relative;
+                        width: 1rem;
+                        height: 1rem;
+                        z-index: 0;
+                      "
+                      alt=""
+                      src="./public/media-styleicon-only2.svg"
+                    />
+
+                    <img
+                      style="
+                        position: absolute;
+                        margin: 0 !important;
+                        top: calc(50% - 8px);
+                        left: calc(50% - 8px);
+                        border-radius: 8px;
+                        width: 1rem;
+                        height: 1rem;
+                        display: none;
+                        z-index: 1;
+                      "
+                      alt=""
+                      src="./public/badge1.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            style="
+              align-self: stretch;
+              border-radius: 8px;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: flex-start;
+              padding: 1rem;
+              gap: 0.75rem;
+            "
+          >
+            <div
+              style="
+                align-self: stretch;
+                width: 1.25rem;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <div
+                style="
+                  border-radius: 4px;
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: flex-start;
+                  position: relative;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 1.25rem;
+                    height: 1.25rem;
+                    z-index: 0;
+                  "
+                  alt=""
+                  src="./public/media-styleicon-only10.svg"
+                />
+
+                <img
+                  style="
+                    position: absolute;
+                    margin: 0 !important;
+                    height: 100%;
+                    width: 100%;
+                    top: 0%;
+                    right: 0%;
+                    bottom: 0%;
+                    left: 0%;
+                    border-radius: 8px;
+                    max-width: 100%;
+                    overflow: hidden;
+                    max-height: 100%;
+                    display: none;
+                    z-index: 1;
+                  "
+                  alt=""
+                  src="./public/badge.svg"
+                />
+              </div>
+            </div>
+            <div
+              style="
+                flex: 1;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 0.75rem;
+              "
+            >
+              <div
+                style="
+                  flex: 1;
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: flex-start;
+                  gap: 0.5rem;
+                "
+              >
+                <div
+                  style="
+                    flex: 1;
+                    overflow: hidden;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+                    gap: 0.5rem;
+                  "
+                >
+                  <div
+                    style="
+                      align-self: stretch;
+                      display: flex;
+                      flex-direction: column;
+                      align-items: flex-start;
+                      justify-content: flex-start;
+                      gap: 0.25rem;
+                    "
+                  >
+                    <div
+                      style="
+                        align-self: stretch;
+                        position: relative;
+                        line-height: 1.38rem;
+                        font-weight: 500;
+                      "
+                    >
+                      Cài đặt
+                    </div>
+                    <div
+                      style="
+                        align-self: stretch;
+                        position: relative;
+                        font-size: 0.75rem;
+                        line-height: 1.13rem;
+                        color: rgba(22, 28, 36, 0.64);
+                        display: none;
+                      "
+                    >
+                      Subtitle
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      align-self: stretch;
+                      position: relative;
+                      line-height: 1.38rem;
+                      color: rgba(22, 28, 36, 0.8);
+                      display: none;
+                    "
+                  >
+                    Body content
+                  </div>
+                </div>
+                <div
+                  style="
+                    border-radius: 100px;
+                    background-color: #ff3d3d;
+                    overflow: hidden;
+                    display: none;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0.13rem 0.5rem;
+                    font-size: 0.75rem;
+                    color: #fff;
+                  "
+                >
+                  <div
+                    style="
+                      position: relative;
+                      line-height: 1.13rem;
+                      font-weight: 600;
+                    "
+                  >
+                    10
+                  </div>
+                </div>
+              </div>
+              <div
+                style="
+                  border-radius: 100px;
+                  background-color: #ff3d3d;
+                  overflow: hidden;
+                  display: none;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: center;
+                  padding: 0.13rem 0.5rem;
+                  font-size: 0.75rem;
+                  color: #fff;
+                "
+              >
+                <div
+                  style="
+                    position: relative;
+                    line-height: 1.13rem;
+                    font-weight: 600;
+                  "
+                >
+                  10
+                </div>
+              </div>
+              <div
+                style="
+                  border-radius: 4px;
+                  height: 1.38rem;
+                  display: none;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: center;
+                  position: relative;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 1rem;
+                    height: 1rem;
+                    z-index: 0;
+                  "
+                  alt=""
+                  src="./public/media-styleicon-only2.svg"
+                />
+
+                <img
+                  style="
+                    position: absolute;
+                    margin: 0 !important;
+                    top: calc(50% - 8px);
+                    left: calc(50% - 8px);
+                    border-radius: 8px;
+                    width: 1rem;
+                    height: 1rem;
+                    display: none;
+                    z-index: 1;
+                  "
+                  alt=""
+                  src="./public/badge1.svg"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            style="
+              align-self: stretch;
+              display: flex;
+              flex-direction: row;
+              align-items: flex-start;
+              justify-content: space-between;
+              padding: 0rem 1rem;
+              text-align: center;
+              font-size: 0.75rem;
+              color: #fff;
+            "
+          >
+            <div
+              style="
+                align-self: stretch;
+                flex: 1;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+              "
+            >
+              <div
+                style="
+                  flex: 1;
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: flex-start;
+                  gap: 0.75rem;
+                "
+              >
+                <div
+                  style="
+                    position: relative;
+                    border-radius: 100px;
+                    border: 2px solid #fff;
+                    box-sizing: border-box;
+                    width: 2.25rem;
+                    height: 2.25rem;
+                  "
+                >
+                  <img
+                    style="
+                      position: absolute;
+                      height: 88.89%;
+                      width: 88.89%;
+                      top: 0%;
+                      right: 11.11%;
+                      bottom: 11.11%;
+                      left: 0%;
+                      border-radius: 50%;
+                      max-width: 100%;
+                      overflow: hidden;
+                      max-height: 100%;
+                      object-fit: cover;
+                    "
+                    alt=""
+                    src="./public/img@2x.png"
+                  />
+
+                  <div
+                    style="
+                      position: absolute;
+                      height: 88.89%;
+                      width: 88.89%;
+                      top: 0%;
+                      right: 11.11%;
+                      bottom: 11.11%;
+                      left: 0%;
+                      border-radius: 8px;
+                      display: none;
+                    "
+                  >
+                    <div
+                      style="
+                        position: absolute;
+                        height: 60%;
+                        width: 100%;
+                        top: -20%;
+                        right: -33.75%;
+                        bottom: 60%;
+                        left: 33.75%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                      "
+                    >
+                      <div
+                        style="
+                          border-radius: 100px;
+                          background-color: #ff3d3d;
+                          border: 2px solid #fff;
+                          box-sizing: border-box;
+                          display: flex;
+                          flex-direction: row;
+                          align-items: center;
+                          justify-content: center;
+                          padding: 0.25rem 0.5rem;
+                          min-width: 1.5rem;
+                        "
+                      >
+                        <div
+                          style="
+                            flex: 1;
+                            position: relative;
+                            line-height: 1.13rem;
+                            font-weight: 600;
+                          "
+                        >
+                          99+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style="
+                    overflow: hidden;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+                    gap: 0.5rem;
+                    text-align: left;
+                    font-size: 0.88rem;
+                    color: rgba(22, 28, 36, 0.9);
+                  "
+                >
+                  <div
+                    style="
+                      display: flex;
+                      flex-direction: column;
+                      align-items: flex-start;
+                      justify-content: flex-start;
+                    "
+                  >
+                    <div
+                      style="
+                        align-self: stretch;
+                        position: relative;
+                        line-height: 1.38rem;
+                        font-weight: 600;
+                      "
+                    >
+                      Kha Buon
+                    </div>
+                    <div
+                      style="
+                        align-self: stretch;
+                        position: relative;
+                        font-size: 0.75rem;
+                        line-height: 1.13rem;
+                        color: rgba(22, 28, 36, 0.64);
+                      "
+                    >
+                      ngobakha@gmail.com
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      align-self: stretch;
+                      position: relative;
+                      line-height: 1.38rem;
+                      color: rgba(22, 28, 36, 0.8);
+                      display: none;
+                    "
+                  >
+                    Body content
+                  </div>
+                </div>
+              </div>
+              <div
+                style="
+                  border-radius: 4px;
+                  display: flex;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  position: relative;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 1.25rem;
+                    height: 1.25rem;
+                    z-index: 0;
+                  "
+                  alt=""
+                  src="./public/media-styleicon-only11.svg"
+                />
+
+                <img
+                  style="
+                    position: absolute;
+                    margin: 0 !important;
+                    height: 100%;
+                    width: 100%;
+                    top: 0%;
+                    right: 0%;
+                    bottom: 0%;
+                    left: 0%;
+                    border-radius: 8px;
+                    max-width: 100%;
+                    overflow: hidden;
+                    max-height: 100%;
+                    display: none;
+                    z-index: 1;
+                  "
+                  alt=""
+                  src="./public/badge.svg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+      
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
+      }
+      </script>
+  </body>
+</html>

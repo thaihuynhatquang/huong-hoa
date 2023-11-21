@@ -1,0 +1,2279 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap"
+    />
+
+    <style>
+      body {
+        margin: 0;
+        line-height: normal;
+      }
+
+      .popup-overlay {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        inset: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="
+        position: relative;
+        border-radius: 5px;
+        border: 1px dashed #9747ff;
+        box-sizing: border-box;
+        width: 100%;
+        height: 71.38rem;
+        overflow: hidden;
+        text-align: center;
+        font-size: 0.88rem;
+        color: rgba(22, 28, 36, 0.6);
+        font-family: Inter;
+      "
+    >
+      <div
+        style="
+          position: absolute;
+          top: 1.25rem;
+          left: 1.25rem;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+          gap: 1.5rem;
+        "
+      >
+        <div
+          style="
+            border-bottom: 1px solid rgba(22, 28, 36, 0.06);
+            box-sizing: border-box;
+            width: 69rem;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+          "
+        >
+          <div
+            style="
+              border-bottom: 2px solid #161c24;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              padding: 0rem 1rem;
+              color: #161c24;
+            "
+          >
+            <div
+              style="
+                height: 2.5rem;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 0.5rem;
+              "
+            >
+              <div
+                style="
+                  border-radius: 4px;
+                  display: none;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  position: relative;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 1rem;
+                    height: 1rem;
+                    z-index: 0;
+                  "
+                  alt=""
+                  src="./public/media-styleicon-only12.svg"
+                />
+
+                <img
+                  style="
+                    position: absolute;
+                    margin: 0 !important;
+                    top: calc(50% - 8px);
+                    left: calc(50% - 8px);
+                    border-radius: 8px;
+                    width: 1rem;
+                    height: 1rem;
+                    display: none;
+                    z-index: 1;
+                  "
+                  alt=""
+                  src="./public/badge1.svg"
+                />
+              </div>
+              <div
+                style="
+                  position: relative;
+                  line-height: 1.38rem;
+                  font-weight: 600;
+                "
+              >
+                MÔ TẢ
+              </div>
+              <div
+                style="
+                  border-radius: 4px;
+                  display: none;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  position: relative;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 1rem;
+                    height: 1rem;
+                    z-index: 0;
+                  "
+                  alt=""
+                  src="./public/media-styleicon-only13.svg"
+                />
+
+                <img
+                  style="
+                    position: absolute;
+                    margin: 0 !important;
+                    top: calc(50% - 8px);
+                    left: calc(50% - 8px);
+                    border-radius: 8px;
+                    width: 1rem;
+                    height: 1rem;
+                    display: none;
+                    z-index: 1;
+                  "
+                  alt=""
+                  src="./public/badge1.svg"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            style="
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              padding: 0rem 1rem;
+            "
+          >
+            <div
+              style="
+                height: 2.5rem;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 0.5rem;
+              "
+            >
+              <div
+                style="
+                  border-radius: 4px;
+                  display: none;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  position: relative;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 1rem;
+                    height: 1rem;
+                    z-index: 0;
+                  "
+                  alt=""
+                  src="./public/media-styleicon-only14.svg"
+                />
+
+                <img
+                  style="
+                    position: absolute;
+                    margin: 0 !important;
+                    top: calc(50% - 8px);
+                    left: calc(50% - 8px);
+                    border-radius: 8px;
+                    width: 1rem;
+                    height: 1rem;
+                    display: none;
+                    z-index: 1;
+                  "
+                  alt=""
+                  src="./public/badge1.svg"
+                />
+              </div>
+              <div style="position: relative; line-height: 1.38rem">
+                KÍCH THƯỚC
+              </div>
+              <div
+                style="
+                  border-radius: 4px;
+                  display: none;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  position: relative;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 1rem;
+                    height: 1rem;
+                    z-index: 0;
+                  "
+                  alt=""
+                  src="./public/iconoutlinedirectiondownarrow.svg"
+                />
+
+                <img
+                  style="
+                    position: absolute;
+                    margin: 0 !important;
+                    top: calc(50% - 8px);
+                    left: calc(50% - 8px);
+                    border-radius: 8px;
+                    width: 1rem;
+                    height: 1rem;
+                    display: none;
+                    z-index: 1;
+                  "
+                  alt=""
+                  src="./public/badge1.svg"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            style="
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              padding: 0rem 1rem;
+            "
+          >
+            <div
+              style="
+                height: 2.5rem;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 0.5rem;
+              "
+            >
+              <div
+                style="
+                  border-radius: 4px;
+                  display: none;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  position: relative;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 1rem;
+                    height: 1rem;
+                    z-index: 0;
+                  "
+                  alt=""
+                  src="./public/media-styleicon-only14.svg"
+                />
+
+                <img
+                  style="
+                    position: absolute;
+                    margin: 0 !important;
+                    top: calc(50% - 8px);
+                    left: calc(50% - 8px);
+                    border-radius: 8px;
+                    width: 1rem;
+                    height: 1rem;
+                    display: none;
+                    z-index: 1;
+                  "
+                  alt=""
+                  src="./public/badge1.svg"
+                />
+              </div>
+              <div style="position: relative; line-height: 1.38rem">
+                VẬN CHUYỂN
+              </div>
+              <div
+                style="
+                  border-radius: 4px;
+                  display: none;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  position: relative;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 1rem;
+                    height: 1rem;
+                    z-index: 0;
+                  "
+                  alt=""
+                  src="./public/iconoutlinedirectiondownarrow.svg"
+                />
+
+                <img
+                  style="
+                    position: absolute;
+                    margin: 0 !important;
+                    top: calc(50% - 8px);
+                    left: calc(50% - 8px);
+                    border-radius: 8px;
+                    width: 1rem;
+                    height: 1rem;
+                    display: none;
+                    z-index: 1;
+                  "
+                  alt=""
+                  src="./public/badge1.svg"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            style="
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              padding: 0rem 1rem;
+            "
+          >
+            <div
+              style="
+                height: 2.5rem;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 0.5rem;
+              "
+            >
+              <div
+                style="
+                  border-radius: 4px;
+                  display: none;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  position: relative;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 1rem;
+                    height: 1rem;
+                    z-index: 0;
+                  "
+                  alt=""
+                  src="./public/media-styleicon-only14.svg"
+                />
+
+                <img
+                  style="
+                    position: absolute;
+                    margin: 0 !important;
+                    top: calc(50% - 8px);
+                    left: calc(50% - 8px);
+                    border-radius: 8px;
+                    width: 1rem;
+                    height: 1rem;
+                    display: none;
+                    z-index: 1;
+                  "
+                  alt=""
+                  src="./public/badge1.svg"
+                />
+              </div>
+              <div style="position: relative; line-height: 1.38rem">
+                CHĂM SÓC
+              </div>
+              <div
+                style="
+                  border-radius: 4px;
+                  display: none;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  position: relative;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 1rem;
+                    height: 1rem;
+                    z-index: 0;
+                  "
+                  alt=""
+                  src="./public/iconoutlinedirectiondownarrow.svg"
+                />
+
+                <img
+                  style="
+                    position: absolute;
+                    margin: 0 !important;
+                    top: calc(50% - 8px);
+                    left: calc(50% - 8px);
+                    border-radius: 8px;
+                    width: 1rem;
+                    height: 1rem;
+                    display: none;
+                    z-index: 1;
+                  "
+                  alt=""
+                  src="./public/badge1.svg"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            style="
+              width: 5.18rem;
+              display: none;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              color: rgba(22, 28, 36, 0.8);
+            "
+          >
+            <div
+              style="
+                height: 2.5rem;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 0.5rem;
+              "
+            >
+              <div
+                style="
+                  border-radius: 4px;
+                  display: none;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  position: relative;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 1rem;
+                    height: 1rem;
+                    z-index: 0;
+                  "
+                  alt=""
+                  src="./public/media-styleicon-only14.svg"
+                />
+
+                <img
+                  style="
+                    position: absolute;
+                    margin: 0 !important;
+                    top: calc(50% - 8px);
+                    left: calc(50% - 8px);
+                    border-radius: 8px;
+                    width: 1rem;
+                    height: 1rem;
+                    display: none;
+                    z-index: 1;
+                  "
+                  alt=""
+                  src="./public/badge1.svg"
+                />
+              </div>
+              <div
+                style="
+                  position: relative;
+                  line-height: 1.38rem;
+                  font-weight: 600;
+                "
+              >
+                Tab
+              </div>
+              <div
+                style="
+                  border-radius: 4px;
+                  display: none;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  position: relative;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 1rem;
+                    height: 1rem;
+                    z-index: 0;
+                  "
+                  alt=""
+                  src="./public/iconoutlinedirectiondownarrow.svg"
+                />
+
+                <img
+                  style="
+                    position: absolute;
+                    margin: 0 !important;
+                    top: calc(50% - 8px);
+                    left: calc(50% - 8px);
+                    border-radius: 8px;
+                    width: 1rem;
+                    height: 1rem;
+                    display: none;
+                    z-index: 1;
+                  "
+                  alt=""
+                  src="./public/badge1.svg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          style="
+            position: relative;
+            line-height: 140%;
+            text-transform: uppercase;
+            color: rgba(22, 28, 36, 0.9);
+            text-align: justify;
+            display: inline-block;
+            width: 69rem;
+            height: 7.5rem;
+            flex-shrink: 0;
+          "
+        >
+          <p style="margin: 0">
+            cẩm CHƯỚNG tạo sự ấn tượng VỚI vài cành HOA. Chúng mang lại vẻ đẹp
+            mạnh mẽ và huyền bí. MÓN QUÀ từ mùa hè đến mùa thu.
+          </p>
+          <p style="margin: 0">
+            Cẩm CHƯỚNG màu xanh biển tượng trưng cho sự xin lỗi, lòng biết ơn và
+            sự hiểu biết.
+          </p>
+          <p style="margin: 0">
+            Cẩm CHƯỚNG là 1 loài cây độc đáo - bạn có biết có thể uống nước qua
+            cánh hoa của CHÚNG không?
+          </p>
+          <p style="margin: 0">&nbsp;</p>
+          <p style="margin: 0">
+            CẨM CHƯỚNG có thân gỗ. Chia đôi phần đáy của thân hoa để giúp nước
+            chảy dễ dàng hơn và phun nhẹ nước lên hoa để cánh hoa hấp thụ.
+          </p>
+          <p style="margin: 0">
+            Nếu hoa cẩm tú của bạn bị HÉO, bạn nên ngâm hoàn toàn đầu hoa trong
+            nước sạch để CÂY CÓ THỂ hấp thụ NƯỚC tối đa.
+          </p>
+        </div>
+      </div>
+      <div
+        style="
+          position: absolute;
+          top: 17.44rem;
+          left: 1.25rem;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+          gap: 1.5rem;
+        "
+      >
+        <div
+          style="
+            border-bottom: 1px solid rgba(22, 28, 36, 0.06);
+            box-sizing: border-box;
+            width: 69rem;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+          "
+        >
+          <div
+            style="
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              padding: 0rem 1rem;
+            "
+          >
+            <div
+              style="
+                height: 2.5rem;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 0.5rem;
+              "
+            >
+              <div
+                style="
+                  border-radius: 4px;
+                  display: none;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  position: relative;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 1rem;
+                    height: 1rem;
+                    z-index: 0;
+                  "
+                  alt=""
+                  src="./public/media-styleicon-only14.svg"
+                />
+
+                <img
+                  style="
+                    position: absolute;
+                    margin: 0 !important;
+                    top: calc(50% - 8px);
+                    left: calc(50% - 8px);
+                    border-radius: 8px;
+                    width: 1rem;
+                    height: 1rem;
+                    display: none;
+                    z-index: 1;
+                  "
+                  alt=""
+                  src="./public/badge1.svg"
+                />
+              </div>
+              <div style="position: relative; line-height: 1.38rem">MÔ TẢ</div>
+              <div
+                style="
+                  border-radius: 4px;
+                  display: none;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  position: relative;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 1rem;
+                    height: 1rem;
+                    z-index: 0;
+                  "
+                  alt=""
+                  src="./public/iconoutlinedirectiondownarrow.svg"
+                />
+
+                <img
+                  style="
+                    position: absolute;
+                    margin: 0 !important;
+                    top: calc(50% - 8px);
+                    left: calc(50% - 8px);
+                    border-radius: 8px;
+                    width: 1rem;
+                    height: 1rem;
+                    display: none;
+                    z-index: 1;
+                  "
+                  alt=""
+                  src="./public/badge1.svg"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            style="
+              border-bottom: 2px solid #161c24;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              padding: 0rem 1rem;
+              color: #161c24;
+            "
+          >
+            <div
+              style="
+                height: 2.5rem;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 0.5rem;
+              "
+            >
+              <div
+                style="
+                  border-radius: 4px;
+                  display: none;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  position: relative;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 1rem;
+                    height: 1rem;
+                    z-index: 0;
+                  "
+                  alt=""
+                  src="./public/media-styleicon-only12.svg"
+                />
+
+                <img
+                  style="
+                    position: absolute;
+                    margin: 0 !important;
+                    top: calc(50% - 8px);
+                    left: calc(50% - 8px);
+                    border-radius: 8px;
+                    width: 1rem;
+                    height: 1rem;
+                    display: none;
+                    z-index: 1;
+                  "
+                  alt=""
+                  src="./public/badge1.svg"
+                />
+              </div>
+              <div
+                style="
+                  position: relative;
+                  line-height: 1.38rem;
+                  font-weight: 600;
+                "
+              >
+                KÍCH THƯỚC
+              </div>
+              <div
+                style="
+                  border-radius: 4px;
+                  display: none;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  position: relative;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 1rem;
+                    height: 1rem;
+                    z-index: 0;
+                  "
+                  alt=""
+                  src="./public/media-styleicon-only13.svg"
+                />
+
+                <img
+                  style="
+                    position: absolute;
+                    margin: 0 !important;
+                    top: calc(50% - 8px);
+                    left: calc(50% - 8px);
+                    border-radius: 8px;
+                    width: 1rem;
+                    height: 1rem;
+                    display: none;
+                    z-index: 1;
+                  "
+                  alt=""
+                  src="./public/badge1.svg"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            style="
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              padding: 0rem 1rem;
+            "
+          >
+            <div
+              style="
+                height: 2.5rem;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 0.5rem;
+              "
+            >
+              <div
+                style="
+                  border-radius: 4px;
+                  display: none;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  position: relative;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 1rem;
+                    height: 1rem;
+                    z-index: 0;
+                  "
+                  alt=""
+                  src="./public/media-styleicon-only14.svg"
+                />
+
+                <img
+                  style="
+                    position: absolute;
+                    margin: 0 !important;
+                    top: calc(50% - 8px);
+                    left: calc(50% - 8px);
+                    border-radius: 8px;
+                    width: 1rem;
+                    height: 1rem;
+                    display: none;
+                    z-index: 1;
+                  "
+                  alt=""
+                  src="./public/badge1.svg"
+                />
+              </div>
+              <div style="position: relative; line-height: 1.38rem">
+                VẬN CHUYỂN
+              </div>
+              <div
+                style="
+                  border-radius: 4px;
+                  display: none;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  position: relative;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 1rem;
+                    height: 1rem;
+                    z-index: 0;
+                  "
+                  alt=""
+                  src="./public/iconoutlinedirectiondownarrow.svg"
+                />
+
+                <img
+                  style="
+                    position: absolute;
+                    margin: 0 !important;
+                    top: calc(50% - 8px);
+                    left: calc(50% - 8px);
+                    border-radius: 8px;
+                    width: 1rem;
+                    height: 1rem;
+                    display: none;
+                    z-index: 1;
+                  "
+                  alt=""
+                  src="./public/badge1.svg"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            style="
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              padding: 0rem 1rem;
+            "
+          >
+            <div
+              style="
+                height: 2.5rem;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 0.5rem;
+              "
+            >
+              <div
+                style="
+                  border-radius: 4px;
+                  display: none;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  position: relative;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 1rem;
+                    height: 1rem;
+                    z-index: 0;
+                  "
+                  alt=""
+                  src="./public/media-styleicon-only14.svg"
+                />
+
+                <img
+                  style="
+                    position: absolute;
+                    margin: 0 !important;
+                    top: calc(50% - 8px);
+                    left: calc(50% - 8px);
+                    border-radius: 8px;
+                    width: 1rem;
+                    height: 1rem;
+                    display: none;
+                    z-index: 1;
+                  "
+                  alt=""
+                  src="./public/badge1.svg"
+                />
+              </div>
+              <div style="position: relative; line-height: 1.38rem">
+                CHĂM SÓC
+              </div>
+              <div
+                style="
+                  border-radius: 4px;
+                  display: none;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  position: relative;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 1rem;
+                    height: 1rem;
+                    z-index: 0;
+                  "
+                  alt=""
+                  src="./public/iconoutlinedirectiondownarrow.svg"
+                />
+
+                <img
+                  style="
+                    position: absolute;
+                    margin: 0 !important;
+                    top: calc(50% - 8px);
+                    left: calc(50% - 8px);
+                    border-radius: 8px;
+                    width: 1rem;
+                    height: 1rem;
+                    display: none;
+                    z-index: 1;
+                  "
+                  alt=""
+                  src="./public/badge1.svg"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            style="
+              width: 5.18rem;
+              display: none;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              color: rgba(22, 28, 36, 0.8);
+            "
+          >
+            <div
+              style="
+                height: 2.5rem;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 0.5rem;
+              "
+            >
+              <div
+                style="
+                  border-radius: 4px;
+                  display: none;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  position: relative;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 1rem;
+                    height: 1rem;
+                    z-index: 0;
+                  "
+                  alt=""
+                  src="./public/media-styleicon-only14.svg"
+                />
+
+                <img
+                  style="
+                    position: absolute;
+                    margin: 0 !important;
+                    top: calc(50% - 8px);
+                    left: calc(50% - 8px);
+                    border-radius: 8px;
+                    width: 1rem;
+                    height: 1rem;
+                    display: none;
+                    z-index: 1;
+                  "
+                  alt=""
+                  src="./public/badge1.svg"
+                />
+              </div>
+              <div
+                style="
+                  position: relative;
+                  line-height: 1.38rem;
+                  font-weight: 600;
+                "
+              >
+                Tab
+              </div>
+              <div
+                style="
+                  border-radius: 4px;
+                  display: none;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  position: relative;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 1rem;
+                    height: 1rem;
+                    z-index: 0;
+                  "
+                  alt=""
+                  src="./public/iconoutlinedirectiondownarrow.svg"
+                />
+
+                <img
+                  style="
+                    position: absolute;
+                    margin: 0 !important;
+                    top: calc(50% - 8px);
+                    left: calc(50% - 8px);
+                    border-radius: 8px;
+                    width: 1rem;
+                    height: 1rem;
+                    display: none;
+                    z-index: 1;
+                  "
+                  alt=""
+                  src="./public/badge1.svg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          style="
+            position: relative;
+            width: 17.5rem;
+            height: 10.31rem;
+            object-fit: cover;
+          "
+          alt=""
+          src="./public/image-1@2x.png"
+        />
+      </div>
+      <div
+        style="
+          position: absolute;
+          top: 36.44rem;
+          left: 1.25rem;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+          gap: 1.5rem;
+        "
+      >
+        <div
+          style="
+            border-bottom: 1px solid rgba(22, 28, 36, 0.06);
+            box-sizing: border-box;
+            width: 69rem;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+          "
+        >
+          <div
+            style="
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              padding: 0rem 1rem;
+            "
+          >
+            <div
+              style="
+                height: 2.5rem;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 0.5rem;
+              "
+            >
+              <div
+                style="
+                  border-radius: 4px;
+                  display: none;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  position: relative;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 1rem;
+                    height: 1rem;
+                    z-index: 0;
+                  "
+                  alt=""
+                  src="./public/media-styleicon-only14.svg"
+                />
+
+                <img
+                  style="
+                    position: absolute;
+                    margin: 0 !important;
+                    top: calc(50% - 8px);
+                    left: calc(50% - 8px);
+                    border-radius: 8px;
+                    width: 1rem;
+                    height: 1rem;
+                    display: none;
+                    z-index: 1;
+                  "
+                  alt=""
+                  src="./public/badge1.svg"
+                />
+              </div>
+              <div style="position: relative; line-height: 1.38rem">MÔ TẢ</div>
+              <div
+                style="
+                  border-radius: 4px;
+                  display: none;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  position: relative;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 1rem;
+                    height: 1rem;
+                    z-index: 0;
+                  "
+                  alt=""
+                  src="./public/iconoutlinedirectiondownarrow.svg"
+                />
+
+                <img
+                  style="
+                    position: absolute;
+                    margin: 0 !important;
+                    top: calc(50% - 8px);
+                    left: calc(50% - 8px);
+                    border-radius: 8px;
+                    width: 1rem;
+                    height: 1rem;
+                    display: none;
+                    z-index: 1;
+                  "
+                  alt=""
+                  src="./public/badge1.svg"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            style="
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              padding: 0rem 1rem;
+            "
+          >
+            <div
+              style="
+                height: 2.5rem;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 0.5rem;
+              "
+            >
+              <div
+                style="
+                  border-radius: 4px;
+                  display: none;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  position: relative;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 1rem;
+                    height: 1rem;
+                    z-index: 0;
+                  "
+                  alt=""
+                  src="./public/media-styleicon-only14.svg"
+                />
+
+                <img
+                  style="
+                    position: absolute;
+                    margin: 0 !important;
+                    top: calc(50% - 8px);
+                    left: calc(50% - 8px);
+                    border-radius: 8px;
+                    width: 1rem;
+                    height: 1rem;
+                    display: none;
+                    z-index: 1;
+                  "
+                  alt=""
+                  src="./public/badge1.svg"
+                />
+              </div>
+              <div style="position: relative; line-height: 1.38rem">
+                KÍCH THƯỚC
+              </div>
+              <div
+                style="
+                  border-radius: 4px;
+                  display: none;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  position: relative;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 1rem;
+                    height: 1rem;
+                    z-index: 0;
+                  "
+                  alt=""
+                  src="./public/iconoutlinedirectiondownarrow.svg"
+                />
+
+                <img
+                  style="
+                    position: absolute;
+                    margin: 0 !important;
+                    top: calc(50% - 8px);
+                    left: calc(50% - 8px);
+                    border-radius: 8px;
+                    width: 1rem;
+                    height: 1rem;
+                    display: none;
+                    z-index: 1;
+                  "
+                  alt=""
+                  src="./public/badge1.svg"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            style="
+              border-bottom: 2px solid #161c24;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              padding: 0rem 1rem;
+              color: #161c24;
+            "
+          >
+            <div
+              style="
+                height: 2.5rem;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 0.5rem;
+              "
+            >
+              <div
+                style="
+                  border-radius: 4px;
+                  display: none;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  position: relative;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 1rem;
+                    height: 1rem;
+                    z-index: 0;
+                  "
+                  alt=""
+                  src="./public/media-styleicon-only12.svg"
+                />
+
+                <img
+                  style="
+                    position: absolute;
+                    margin: 0 !important;
+                    top: calc(50% - 8px);
+                    left: calc(50% - 8px);
+                    border-radius: 8px;
+                    width: 1rem;
+                    height: 1rem;
+                    display: none;
+                    z-index: 1;
+                  "
+                  alt=""
+                  src="./public/badge1.svg"
+                />
+              </div>
+              <div
+                style="
+                  position: relative;
+                  line-height: 1.38rem;
+                  font-weight: 600;
+                "
+              >
+                VẬN CHUYỂN
+              </div>
+              <div
+                style="
+                  border-radius: 4px;
+                  display: none;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  position: relative;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 1rem;
+                    height: 1rem;
+                    z-index: 0;
+                  "
+                  alt=""
+                  src="./public/media-styleicon-only13.svg"
+                />
+
+                <img
+                  style="
+                    position: absolute;
+                    margin: 0 !important;
+                    top: calc(50% - 8px);
+                    left: calc(50% - 8px);
+                    border-radius: 8px;
+                    width: 1rem;
+                    height: 1rem;
+                    display: none;
+                    z-index: 1;
+                  "
+                  alt=""
+                  src="./public/badge1.svg"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            style="
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              padding: 0rem 1rem;
+            "
+          >
+            <div
+              style="
+                height: 2.5rem;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 0.5rem;
+              "
+            >
+              <div
+                style="
+                  border-radius: 4px;
+                  display: none;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  position: relative;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 1rem;
+                    height: 1rem;
+                    z-index: 0;
+                  "
+                  alt=""
+                  src="./public/media-styleicon-only14.svg"
+                />
+
+                <img
+                  style="
+                    position: absolute;
+                    margin: 0 !important;
+                    top: calc(50% - 8px);
+                    left: calc(50% - 8px);
+                    border-radius: 8px;
+                    width: 1rem;
+                    height: 1rem;
+                    display: none;
+                    z-index: 1;
+                  "
+                  alt=""
+                  src="./public/badge1.svg"
+                />
+              </div>
+              <div style="position: relative; line-height: 1.38rem">
+                CHĂM SÓC
+              </div>
+              <div
+                style="
+                  border-radius: 4px;
+                  display: none;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  position: relative;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 1rem;
+                    height: 1rem;
+                    z-index: 0;
+                  "
+                  alt=""
+                  src="./public/iconoutlinedirectiondownarrow.svg"
+                />
+
+                <img
+                  style="
+                    position: absolute;
+                    margin: 0 !important;
+                    top: calc(50% - 8px);
+                    left: calc(50% - 8px);
+                    border-radius: 8px;
+                    width: 1rem;
+                    height: 1rem;
+                    display: none;
+                    z-index: 1;
+                  "
+                  alt=""
+                  src="./public/badge1.svg"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            style="
+              width: 5.18rem;
+              display: none;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              color: rgba(22, 28, 36, 0.8);
+            "
+          >
+            <div
+              style="
+                height: 2.5rem;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 0.5rem;
+              "
+            >
+              <div
+                style="
+                  border-radius: 4px;
+                  display: none;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  position: relative;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 1rem;
+                    height: 1rem;
+                    z-index: 0;
+                  "
+                  alt=""
+                  src="./public/media-styleicon-only14.svg"
+                />
+
+                <img
+                  style="
+                    position: absolute;
+                    margin: 0 !important;
+                    top: calc(50% - 8px);
+                    left: calc(50% - 8px);
+                    border-radius: 8px;
+                    width: 1rem;
+                    height: 1rem;
+                    display: none;
+                    z-index: 1;
+                  "
+                  alt=""
+                  src="./public/badge1.svg"
+                />
+              </div>
+              <div
+                style="
+                  position: relative;
+                  line-height: 1.38rem;
+                  font-weight: 600;
+                "
+              >
+                Tab
+              </div>
+              <div
+                style="
+                  border-radius: 4px;
+                  display: none;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  position: relative;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 1rem;
+                    height: 1rem;
+                    z-index: 0;
+                  "
+                  alt=""
+                  src="./public/iconoutlinedirectiondownarrow.svg"
+                />
+
+                <img
+                  style="
+                    position: absolute;
+                    margin: 0 !important;
+                    top: calc(50% - 8px);
+                    left: calc(50% - 8px);
+                    border-radius: 8px;
+                    width: 1rem;
+                    height: 1rem;
+                    display: none;
+                    z-index: 1;
+                  "
+                  alt=""
+                  src="./public/badge1.svg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          style="
+            position: relative;
+            line-height: 140%;
+            text-transform: uppercase;
+            color: rgba(22, 28, 36, 0.9);
+            text-align: justify;
+            display: inline-block;
+            width: 69rem;
+            height: 7.5rem;
+            flex-shrink: 0;
+          "
+        >
+          <p style="margin: 0">
+            Gửi hoa cẩm tú ngay hôm nay và tận hưởng dịch vụ đóng gói quà tặng
+            miễn phí tại trang thanh toán.
+          </p>
+          <p style="margin: 0">&nbsp;</p>
+          <p style="margin: 0">
+            <span
+              >Xin lưu ý rằng hoa không được giao kèm bình hoa và nến. Khám phá
+              bộ sưu tập
+            </span>
+            <b style="text-decoration: underline; font-family: Inter"
+              >phụ kiện trang trí</b
+            >
+            <span style="font-family: Inter">
+              của chúng tôi để tìm kiếm bình hoa và hương thơm nhà cửa đặc biệt
+              của chúng tôi.</span
+            >
+          </p>
+        </div>
+      </div>
+      <div
+        style="
+          position: absolute;
+          top: 52.63rem;
+          left: 1.25rem;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+          gap: 1.5rem;
+        "
+      >
+        <div
+          style="
+            border-bottom: 1px solid rgba(22, 28, 36, 0.06);
+            box-sizing: border-box;
+            width: 69rem;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+          "
+        >
+          <div
+            style="
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              padding: 0rem 1rem;
+            "
+          >
+            <div
+              style="
+                height: 2.5rem;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 0.5rem;
+              "
+            >
+              <div
+                style="
+                  border-radius: 4px;
+                  display: none;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  position: relative;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 1rem;
+                    height: 1rem;
+                    z-index: 0;
+                  "
+                  alt=""
+                  src="./public/media-styleicon-only14.svg"
+                />
+
+                <img
+                  style="
+                    position: absolute;
+                    margin: 0 !important;
+                    top: calc(50% - 8px);
+                    left: calc(50% - 8px);
+                    border-radius: 8px;
+                    width: 1rem;
+                    height: 1rem;
+                    display: none;
+                    z-index: 1;
+                  "
+                  alt=""
+                  src="./public/badge1.svg"
+                />
+              </div>
+              <div style="position: relative; line-height: 1.38rem">MÔ TẢ</div>
+              <div
+                style="
+                  border-radius: 4px;
+                  display: none;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  position: relative;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 1rem;
+                    height: 1rem;
+                    z-index: 0;
+                  "
+                  alt=""
+                  src="./public/iconoutlinedirectiondownarrow.svg"
+                />
+
+                <img
+                  style="
+                    position: absolute;
+                    margin: 0 !important;
+                    top: calc(50% - 8px);
+                    left: calc(50% - 8px);
+                    border-radius: 8px;
+                    width: 1rem;
+                    height: 1rem;
+                    display: none;
+                    z-index: 1;
+                  "
+                  alt=""
+                  src="./public/badge1.svg"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            style="
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              padding: 0rem 1rem;
+            "
+          >
+            <div
+              style="
+                height: 2.5rem;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 0.5rem;
+              "
+            >
+              <div
+                style="
+                  border-radius: 4px;
+                  display: none;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  position: relative;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 1rem;
+                    height: 1rem;
+                    z-index: 0;
+                  "
+                  alt=""
+                  src="./public/media-styleicon-only14.svg"
+                />
+
+                <img
+                  style="
+                    position: absolute;
+                    margin: 0 !important;
+                    top: calc(50% - 8px);
+                    left: calc(50% - 8px);
+                    border-radius: 8px;
+                    width: 1rem;
+                    height: 1rem;
+                    display: none;
+                    z-index: 1;
+                  "
+                  alt=""
+                  src="./public/badge1.svg"
+                />
+              </div>
+              <div style="position: relative; line-height: 1.38rem">
+                KÍCH THƯỚC
+              </div>
+              <div
+                style="
+                  border-radius: 4px;
+                  display: none;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  position: relative;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 1rem;
+                    height: 1rem;
+                    z-index: 0;
+                  "
+                  alt=""
+                  src="./public/iconoutlinedirectiondownarrow.svg"
+                />
+
+                <img
+                  style="
+                    position: absolute;
+                    margin: 0 !important;
+                    top: calc(50% - 8px);
+                    left: calc(50% - 8px);
+                    border-radius: 8px;
+                    width: 1rem;
+                    height: 1rem;
+                    display: none;
+                    z-index: 1;
+                  "
+                  alt=""
+                  src="./public/badge1.svg"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            style="
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              padding: 0rem 1rem;
+            "
+          >
+            <div
+              style="
+                height: 2.5rem;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 0.5rem;
+              "
+            >
+              <div
+                style="
+                  border-radius: 4px;
+                  display: none;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  position: relative;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 1rem;
+                    height: 1rem;
+                    z-index: 0;
+                  "
+                  alt=""
+                  src="./public/media-styleicon-only14.svg"
+                />
+
+                <img
+                  style="
+                    position: absolute;
+                    margin: 0 !important;
+                    top: calc(50% - 8px);
+                    left: calc(50% - 8px);
+                    border-radius: 8px;
+                    width: 1rem;
+                    height: 1rem;
+                    display: none;
+                    z-index: 1;
+                  "
+                  alt=""
+                  src="./public/badge1.svg"
+                />
+              </div>
+              <div style="position: relative; line-height: 1.38rem">
+                VẬN CHUYỂN
+              </div>
+              <div
+                style="
+                  border-radius: 4px;
+                  display: none;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  position: relative;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 1rem;
+                    height: 1rem;
+                    z-index: 0;
+                  "
+                  alt=""
+                  src="./public/iconoutlinedirectiondownarrow.svg"
+                />
+
+                <img
+                  style="
+                    position: absolute;
+                    margin: 0 !important;
+                    top: calc(50% - 8px);
+                    left: calc(50% - 8px);
+                    border-radius: 8px;
+                    width: 1rem;
+                    height: 1rem;
+                    display: none;
+                    z-index: 1;
+                  "
+                  alt=""
+                  src="./public/badge1.svg"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            style="
+              border-bottom: 2px solid #161c24;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              padding: 0rem 1rem;
+              color: #161c24;
+            "
+          >
+            <div
+              style="
+                height: 2.5rem;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 0.5rem;
+              "
+            >
+              <div
+                style="
+                  border-radius: 4px;
+                  display: none;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  position: relative;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 1rem;
+                    height: 1rem;
+                    z-index: 0;
+                  "
+                  alt=""
+                  src="./public/media-styleicon-only12.svg"
+                />
+
+                <img
+                  style="
+                    position: absolute;
+                    margin: 0 !important;
+                    top: calc(50% - 8px);
+                    left: calc(50% - 8px);
+                    border-radius: 8px;
+                    width: 1rem;
+                    height: 1rem;
+                    display: none;
+                    z-index: 1;
+                  "
+                  alt=""
+                  src="./public/badge1.svg"
+                />
+              </div>
+              <div
+                style="
+                  position: relative;
+                  line-height: 1.38rem;
+                  font-weight: 600;
+                "
+              >
+                CHĂM SÓC
+              </div>
+              <div
+                style="
+                  border-radius: 4px;
+                  display: none;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  position: relative;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 1rem;
+                    height: 1rem;
+                    z-index: 0;
+                  "
+                  alt=""
+                  src="./public/media-styleicon-only13.svg"
+                />
+
+                <img
+                  style="
+                    position: absolute;
+                    margin: 0 !important;
+                    top: calc(50% - 8px);
+                    left: calc(50% - 8px);
+                    border-radius: 8px;
+                    width: 1rem;
+                    height: 1rem;
+                    display: none;
+                    z-index: 1;
+                  "
+                  alt=""
+                  src="./public/badge1.svg"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            style="
+              width: 5.18rem;
+              display: none;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              color: rgba(22, 28, 36, 0.8);
+            "
+          >
+            <div
+              style="
+                height: 2.5rem;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 0.5rem;
+              "
+            >
+              <div
+                style="
+                  border-radius: 4px;
+                  display: none;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  position: relative;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 1rem;
+                    height: 1rem;
+                    z-index: 0;
+                  "
+                  alt=""
+                  src="./public/media-styleicon-only14.svg"
+                />
+
+                <img
+                  style="
+                    position: absolute;
+                    margin: 0 !important;
+                    top: calc(50% - 8px);
+                    left: calc(50% - 8px);
+                    border-radius: 8px;
+                    width: 1rem;
+                    height: 1rem;
+                    display: none;
+                    z-index: 1;
+                  "
+                  alt=""
+                  src="./public/badge1.svg"
+                />
+              </div>
+              <div
+                style="
+                  position: relative;
+                  line-height: 1.38rem;
+                  font-weight: 600;
+                "
+              >
+                Tab
+              </div>
+              <div
+                style="
+                  border-radius: 4px;
+                  display: none;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  position: relative;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 1rem;
+                    height: 1rem;
+                    z-index: 0;
+                  "
+                  alt=""
+                  src="./public/iconoutlinedirectiondownarrow.svg"
+                />
+
+                <img
+                  style="
+                    position: absolute;
+                    margin: 0 !important;
+                    top: calc(50% - 8px);
+                    left: calc(50% - 8px);
+                    border-radius: 8px;
+                    width: 1rem;
+                    height: 1rem;
+                    display: none;
+                    z-index: 1;
+                  "
+                  alt=""
+                  src="./public/badge1.svg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          style="
+            position: relative;
+            line-height: 140%;
+            text-transform: uppercase;
+            color: rgba(22, 28, 36, 0.9);
+            text-align: justify;
+            display: inline-block;
+            width: 69rem;
+          "
+        >
+          <p style="margin: 0">
+            Để tận hưởng hoa của bạn lâu hơn, hãy tuân theo những bước đơn giản
+            sau:
+          </p>
+          <p style="margin: 0">&nbsp;</p>
+          <p style="margin: 0">
+            • Loại bỏ bất kỳ lá cây nào ở phần dưới mực nước để tránh làm bẩn
+            nước
+          </p>
+          <p style="margin: 0">
+            • Cắt lại đầu cành ở góc 45° để cây hấp thụ nước tối đa
+          </p>
+          <p style="margin: 0">
+            • Đặt cành hoa vào bình hoa sạch với nước ấm càng sớm càng tốt
+          </p>
+          <p style="margin: 0">
+            • Đảm bảo các bông hoa không tiếp xúc trực tiếp với ánh nắng mặt
+            trời, gió hay nhiệt độ cao
+          </p>
+          <p style="margin: 0">
+            • Thay nước thường xuyên để giữ cho hoa luôn tươi và khỏe
+          </p>
+          <p style="margin: 0">
+            • Chia đôi phần đáy của thân hoa để giúp nước chảy dễ dàng hơn và
+            phun nhẹ nước lên hoa để cánh hoa hấp thụ. Nếu hoa cẩm tú của bạn bị
+            HÉO, bạn nên ngâm hoàn toàn đầu hoa trong nước sạch để CÂY CÓ THỂ
+            hấp thụ NƯỚC tối đa.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

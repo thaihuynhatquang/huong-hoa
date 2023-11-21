@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap"
+    />
+
+    <style>
+      body {
+        margin: 0;
+        line-height: normal;
+      }
+
+      .popup-overlay {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        inset: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="
+        position: relative;
+        background-color: #f9f9f9;
+        width: 100%;
+        height: 128.69rem;
+        overflow: hidden;
+        text-align: left;
+        font-size: 0.88rem;
+        color: #000;
+        font-family: Inter;
+      "
+    >
+      <div
+        style="
+          position: absolute;
+          top: 0rem;
+          left: 0rem;
+          background-color: #f9f9f9;
+          border-bottom: 1px solid rgba(22, 28, 36, 0.2);
+          box-sizing: border-box;
+          width: 120rem;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          padding: 1.25rem 2.5rem;
+          font-size: 1rem;
+          color: rgba(22, 28, 36, 0.9);
+        "
+      >
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 1.5rem;
+            z-index: 1;
+          "
+        >
+          <div
+            style="
+              position: relative;
+              font-size: 1.25rem;
+              line-height: 1.75rem;
+              font-weight: 600;
+            "
+          >
+            HUONG-HOA
+          </div>
+          <div
+            style="
+              overflow: hidden;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+            "
+          >
+            <div
+              style="
+                height: 3rem;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                padding: 0rem 1rem;
+                box-sizing: border-box;
+                gap: 0.5rem;
+              "
+            >
+              <img
+                style="
+                  position: relative;
+                  width: 1.25rem;
+                  height: 1.25rem;
+                  overflow: hidden;
+                  flex-shrink: 0;
+                  display: none;
+                "
+                alt=""
+                src="./public/iconfilledappsettings1.svg"
+              />
+
+              <div style="position: relative; line-height: 1.5rem">
+                CỬA HÀNG
+              </div>
+              <img
+                style="
+                  position: relative;
+                  width: 1.25rem;
+                  height: 1.25rem;
+                  overflow: hidden;
+                  flex-shrink: 0;
+                "
+                alt=""
+                src="./public/iconoutlinedirectiondownarrow1.svg"
+              />
+            </div>
+          </div>
+          <div style="position: relative; line-height: 1.5rem">LIÊN HỆ</div>
+        </div>
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 2.5rem;
+            z-index: 0;
+          "
+        >
+          <div
+            style="
+              overflow: hidden;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+            "
+          >
+            <div
+              style="
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <img
+                style="
+                  position: relative;
+                  width: 1.5rem;
+                  height: 1.5rem;
+                  overflow: hidden;
+                  flex-shrink: 0;
+                "
+                alt=""
+                src="./public/iconoutlineeditorsearch.svg"
+              />
+            </div>
+          </div>
+          <div
+            style="
+              overflow: hidden;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+            "
+          >
+            <div
+              style="
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <img
+                style="
+                  position: relative;
+                  width: 1.5rem;
+                  height: 1.5rem;
+                  overflow: hidden;
+                  flex-shrink: 0;
+                "
+                alt=""
+                src="./public/iconoutlineappbell.svg"
+              />
+            </div>
+          </div>
+          <div
+            style="
+              overflow: hidden;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+            "
+          >
+            <div
+              style="
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <img
+                style="
+                  position: relative;
+                  width: 1.5rem;
+                  height: 1.5rem;
+                  overflow: hidden;
+                  flex-shrink: 0;
+                "
+                alt=""
+                src="./public/iconoutlineappshoppingcart.svg"
+              />
+            </div>
+          </div>
+          <div
+            style="
+              overflow: hidden;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+            "
+          >
+            <div
+              style="
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <img
+                style="
+                  position: relative;
+                  width: 1.5rem;
+                  height: 1.5rem;
+                  overflow: hidden;
+                  flex-shrink: 0;
+                "
+                alt=""
+                src="./public/iconoutlineappuserprofile.svg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        style="
+          position: absolute;
+          top: 13.38rem;
+          left: 4.63rem;
+          width: 5.35rem;
+          height: 5.5rem;
+        "
+        alt=""
+        src="./public/group-1632.svg"
+      />
+
+      <div
+        style="
+          position: absolute;
+          top: 89.38rem;
+          left: 0rem;
+          background-color: #f4f4f4;
+          border-top: 1px solid rgba(22, 28, 36, 0.2);
+          box-sizing: border-box;
+          width: 120rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 4.5rem;
+          font-size: 1.25rem;
+          color: rgba(22, 28, 36, 0.9);
+        "
+      >
+        <div
+          style="
+            align-self: stretch;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0rem 2rem;
+            box-sizing: border-box;
+            min-width: 48rem;
+          "
+        >
+          <div
+            style="
+              flex: 1;
+              position: relative;
+              line-height: 1.75rem;
+              font-weight: 600;
+            "
+          >
+            HUONG-HOA
+          </div>
+          <div
+            style="
+              width: 69rem;
+              display: flex;
+              flex-direction: row;
+              align-items: flex-start;
+              justify-content: flex-start;
+              gap: 1.5rem;
+              font-size: 0.88rem;
+              color: #161c24;
+            "
+          >
+            <div
+              style="
+                width: 22rem;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                padding: 2.5rem 0rem;
+                box-sizing: border-box;
+                gap: 1.5rem;
+                color: rgba(22, 28, 36, 0.32);
+              "
+            >
+              <div
+                style="
+                  align-self: stretch;
+                  position: relative;
+                  font-size: 1.25rem;
+                  line-height: 1.75rem;
+                  font-weight: 600;
+                  color: rgba(22, 28, 36, 0.4);
+                "
+              >
+                LIÊN HỆ
+              </div>
+              <div
+                style="
+                  align-self: stretch;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  gap: 0.5rem;
+                "
+              >
+                <div
+                  style="
+                    position: relative;
+                    line-height: 1.38rem;
+                    display: flex;
+                    align-items: center;
+                    width: 17.5rem;
+                  "
+                >
+                  ĐỊA CHỈ
+                </div>
+                <div
+                  style="
+                    align-self: stretch;
+                    position: relative;
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                    font-weight: 600;
+                    color: #161c24;
+                  "
+                >
+                  124 NGUYỄN TRÃI, THANH XUÂN, HÀ NỘI
+                </div>
+              </div>
+              <div
+                style="
+                  align-self: stretch;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  gap: 0.5rem;
+                "
+              >
+                <div
+                  style="
+                    position: relative;
+                    line-height: 1.38rem;
+                    display: flex;
+                    align-items: center;
+                    width: 17.5rem;
+                  "
+                >
+                  SỐ ĐIỆN THOẠI
+                </div>
+                <div
+                  style="
+                    align-self: stretch;
+                    position: relative;
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                    font-weight: 600;
+                    color: #161c24;
+                  "
+                >
+                  +84811 888 1888
+                </div>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  gap: 0.5rem;
+                "
+              >
+                <div
+                  style="
+                    position: relative;
+                    line-height: 1.38rem;
+                    display: flex;
+                    align-items: center;
+                    width: 17.5rem;
+                  "
+                >
+                  EMAIL
+                </div>
+                <div
+                  style="
+                    position: relative;
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                    font-weight: 600;
+                    color: #161c24;
+                    display: flex;
+                    align-items: center;
+                    width: 17.5rem;
+                  "
+                >
+                  admin@huonghoa.com
+                </div>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  gap: 1.5rem;
+                  font-size: 1.25rem;
+                "
+              >
+                <div
+                  style="
+                    position: relative;
+                    line-height: 1.75rem;
+                    font-weight: 600;
+                    display: flex;
+                    align-items: center;
+                    width: 17.5rem;
+                  "
+                >
+                  THEO DÕI
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    gap: 2rem;
+                  "
+                >
+                  <img
+                    style="
+                      position: relative;
+                      width: 1.5rem;
+                      height: 1.5rem;
+                      overflow: hidden;
+                      flex-shrink: 0;
+                    "
+                    alt=""
+                    src="./public/iconfilledbrandinstagram.svg"
+                  />
+
+                  <img
+                    style="
+                      position: relative;
+                      width: 1.5rem;
+                      height: 1.5rem;
+                      overflow: hidden;
+                      flex-shrink: 0;
+                    "
+                    alt=""
+                    src="./public/iconfilledbrandlogofacebook.svg"
+                  />
+
+                  <img
+                    style="
+                      position: relative;
+                      width: 1.5rem;
+                      height: 1.5rem;
+                      overflow: hidden;
+                      flex-shrink: 0;
+                    "
+                    alt=""
+                    src="./public/iconfilledbrandinstagram.svg"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              style="
+                width: 22rem;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                padding: 2.5rem 0rem;
+                box-sizing: border-box;
+                gap: 1.5rem;
+                font-size: 1.25rem;
+              "
+            >
+              <div
+                style="
+                  align-self: stretch;
+                  position: relative;
+                  line-height: 1.75rem;
+                  font-weight: 600;
+                  color: rgba(22, 28, 36, 0.4);
+                "
+              >
+                CỬA HÀNG
+              </div>
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  gap: 0.5rem;
+                  font-size: 1rem;
+                "
+              >
+                <div
+                  style="
+                    position: relative;
+                    line-height: 1.5rem;
+                    font-weight: 600;
+                    display: flex;
+                    align-items: center;
+                    width: 17.5rem;
+                  "
+                >
+                  TẤT CẢ
+                </div>
+                <div
+                  style="
+                    position: relative;
+                    line-height: 1.5rem;
+                    font-weight: 600;
+                    display: flex;
+                    align-items: center;
+                    width: 17.5rem;
+                  "
+                >
+                  HOA TƯƠI
+                </div>
+                <div
+                  style="
+                    position: relative;
+                    line-height: 1.5rem;
+                    font-weight: 600;
+                    display: flex;
+                    align-items: center;
+                    width: 17.5rem;
+                  "
+                >
+                  HOA KHÔ
+                </div>
+                <div
+                  style="
+                    position: relative;
+                    line-height: 1.5rem;
+                    font-weight: 600;
+                    display: flex;
+                    align-items: center;
+                    width: 17.5rem;
+                  "
+                >
+                  PHỤ KIỆN TRANG TRÍ
+                </div>
+              </div>
+              <div
+                style="
+                  align-self: stretch;
+                  position: relative;
+                  line-height: 1.75rem;
+                  font-weight: 600;
+                  color: rgba(22, 28, 36, 0.32);
+                "
+              >
+                DỊCH VỤ
+              </div>
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  gap: 0.5rem;
+                  font-size: 1rem;
+                "
+              >
+                <div
+                  style="
+                    position: relative;
+                    line-height: 1.5rem;
+                    font-weight: 600;
+                    display: flex;
+                    align-items: center;
+                    width: 17.5rem;
+                  "
+                >
+                  GÓI GIAO HOA ĐỊNH KÌ
+                </div>
+                <div
+                  style="
+                    position: relative;
+                    line-height: 1.5rem;
+                    font-weight: 600;
+                    display: flex;
+                    align-items: center;
+                    width: 17.5rem;
+                  "
+                >
+                  SỰ KIỆN
+                </div>
+              </div>
+            </div>
+            <div
+              style="
+                width: 22rem;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                padding: 2.5rem 0rem;
+                box-sizing: border-box;
+                gap: 1.5rem;
+                font-size: 1rem;
+              "
+            >
+              <div
+                style="
+                  align-self: stretch;
+                  position: relative;
+                  font-size: 1.25rem;
+                  line-height: 1.75rem;
+                  font-weight: 600;
+                  color: rgba(22, 28, 36, 0.4);
+                "
+              >
+                VỀ CHÚNG TÔI
+              </div>
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                "
+              >
+                <div
+                  style="
+                    position: relative;
+                    line-height: 1.5rem;
+                    font-weight: 600;
+                    display: flex;
+                    align-items: center;
+                    width: 17.5rem;
+                  "
+                >
+                  CÂU CHUYỆN
+                </div>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  gap: 0.5rem;
+                "
+              >
+                <div
+                  style="
+                    position: relative;
+                    line-height: 1.5rem;
+                    font-weight: 600;
+                    display: flex;
+                    align-items: center;
+                    width: 17.5rem;
+                  "
+                >
+                  VẬN CHUYỂN
+                </div>
+                <div
+                  style="
+                    position: relative;
+                    line-height: 1.5rem;
+                    font-weight: 600;
+                    display: flex;
+                    align-items: center;
+                    width: 17.5rem;
+                  "
+                >
+                  ĐIỀU KHOẢN VÀ QUY ĐỊNH
+                </div>
+                <div
+                  style="
+                    position: relative;
+                    line-height: 1.5rem;
+                    font-weight: 600;
+                    display: flex;
+                    align-items: center;
+                    width: 17.5rem;
+                  "
+                >
+                  CHÍNH SÁCH BẢO MẬT
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          style="
+            align-self: stretch;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 2rem 6.88rem;
+            gap: 2.5rem;
+            text-align: center;
+            font-size: 1rem;
+            color: rgba(22, 28, 36, 0.4);
+          "
+        >
+          <div
+            style="
+              align-self: stretch;
+              position: relative;
+              border-top: 2px solid rgba(22, 28, 36, 0.2);
+              box-sizing: border-box;
+              height: 0.13rem;
+            "
+          ></div>
+          <b style="align-self: stretch; position: relative"
+            >Copyright 2023 HuongHoa. All rights reserved</b
+          >
+        </div>
+      </div>
+      <div
+        style="
+          position: absolute;
+          top: 19.44rem;
+          left: 33.56rem;
+          line-height: 140%;
+          text-transform: uppercase;
+          text-align: justify;
+        "
+      >
+        <p style="margin: 0">Họ và tên:</p>
+        <p style="margin: 0">&nbsp;</p>
+        <p style="margin: 0">trịnh trần phương tuấn</p>
+      </div>
+      <div
+        style="
+          position: absolute;
+          top: 15rem;
+          left: 12.06rem;
+          line-height: 140%;
+          text-transform: uppercase;
+          text-align: justify;
+        "
+      >
+        <p style="margin: 0">xin chào,</p>
+        <p style="margin: 0; font-weight: 600">Trịnh trần phương tuấn !</p>
+      </div>
+      <div
+        style="
+          position: absolute;
+          top: 25.19rem;
+          left: 33.56rem;
+          line-height: 140%;
+          text-transform: uppercase;
+          text-align: justify;
+        "
+      >
+        <p style="margin: 0">số điện thoại:</p>
+        <p style="margin: 0">&nbsp;</p>
+        <p style="margin: 0">3636363636</p>
+      </div>
+      <div
+        style="
+          position: absolute;
+          top: 31rem;
+          left: 33.56rem;
+          line-height: 140%;
+          text-transform: uppercase;
+          text-align: justify;
+        "
+      >
+        <p style="margin: 0">email:</p>
+        <p style="margin: 0">&nbsp;</p>
+        <p style="margin: 0">jack5trieu@gmail.com</p>
+      </div>
+      <div
+        style="
+          position: absolute;
+          top: 39rem;
+          left: 33.56rem;
+          text-decoration: underline;
+          line-height: 140%;
+          text-transform: uppercase;
+          text-align: justify;
+        "
+      >
+        đổi mật khẩu
+      </div>
+      <div
+        style="
+          position: absolute;
+          top: 13rem;
+          left: 33.56rem;
+          font-size: 2.38rem;
+          line-height: 2.88rem;
+          font-weight: 500;
+          color: #161c24;
+          display: inline-block;
+          width: 30.38rem;
+        "
+      >
+        THÔNG TIN CÁ NHÂN
+      </div>
+      <div
+        style="
+          position: absolute;
+          top: 22.19rem;
+          left: 4.63rem;
+          font-size: 1.5rem;
+          line-height: 2.88rem;
+          font-weight: 600;
+          color: #161c24;
+          display: inline-block;
+          width: 30.38rem;
+        "
+      >
+        THÔNG TIN CÁ NHÂN
+      </div>
+      <div
+        style="
+          position: absolute;
+          top: 27.38rem;
+          left: 4.63rem;
+          font-size: 1.5rem;
+          line-height: 2.88rem;
+          color: #161c24;
+          display: inline-block;
+          width: 30.38rem;
+        "
+      >
+        ĐỊA CHỈ
+      </div>
+      <div
+        style="
+          position: absolute;
+          top: 32.56rem;
+          left: 4.63rem;
+          font-size: 1.5rem;
+          line-height: 2.88rem;
+          color: #161c24;
+          display: inline-block;
+          width: 30.38rem;
+        "
+      >
+        ĐƠN HÀNG CỦA TÔI
+      </div>
+      <div
+        style="
+          position: absolute;
+          top: 37.75rem;
+          left: 4.63rem;
+          font-size: 1.5rem;
+          line-height: 2.88rem;
+          color: #161c24;
+          display: inline-block;
+          width: 30.38rem;
+        "
+      >
+        ĐĂNG XUẤT
+      </div>
+      <div
+        style="
+          position: absolute;
+          top: 13.34rem;
+          left: 29.16rem;
+          border-right: 1px solid #cccdce;
+          box-sizing: border-box;
+          width: 0.06rem;
+          height: 56.81rem;
+        "
+      ></div>
+      <div
+        style="
+          position: absolute;
+          top: 43rem;
+          left: 33.56rem;
+          width: 21rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-end;
+          font-size: 1.13rem;
+          color: #fff;
+        "
+      >
+        <div
+          style="
+            align-self: stretch;
+            flex: 1;
+            background-color: #161c24;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+          "
+        >
+          <div
+            style="
+              height: 4rem;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: flex-start;
+              padding: 0rem 1.5rem;
+              box-sizing: border-box;
+              gap: 0.5rem;
+            "
+          >
+            <img
+              style="
+                position: relative;
+                width: 1.5rem;
+                height: 1.5rem;
+                overflow: hidden;
+                flex-shrink: 0;
+                display: none;
+              "
+              alt=""
+              src="./public/iconfilledappsettings5.svg"
+            />
+
+            <div
+              style="
+                position: relative;
+                line-height: 1.75rem;
+                font-weight: 600;
+                display: none;
+              "
+            >
+              MUA NGAY
+            </div>
+            <img
+              style="
+                position: relative;
+                width: 1.5rem;
+                height: 1.5rem;
+                overflow: hidden;
+                flex-shrink: 0;
+                display: none;
+              "
+              alt=""
+              src="./public/iconoutlinedirectiondownarrow4.svg"
+            />
+          </div>
+        </div>
+        <div
+          style="
+            position: relative;
+            font-size: 0.88rem;
+            line-height: 140%;
+            text-transform: uppercase;
+            text-align: justify;
+            margin-top: -1.87rem;
+          "
+        >
+          lưu thay đổi
+        </div>
+      </div>
+      <div
+        style="
+          position: absolute;
+          top: 23.59rem;
+          left: 32.97rem;
+          border-top: 1px solid #cccdce;
+          box-sizing: border-box;
+          width: 78.5rem;
+          height: 0.06rem;
+        "
+      ></div>
+      <div
+        style="
+          position: absolute;
+          top: 29.41rem;
+          left: 32.97rem;
+          border-top: 1px solid #cccdce;
+          box-sizing: border-box;
+          width: 78.5rem;
+          height: 0.06rem;
+        "
+      ></div>
+      <div
+        style="
+          position: absolute;
+          top: 35.16rem;
+          left: 32.97rem;
+          border-top: 1px solid #cccdce;
+          box-sizing: border-box;
+          width: 78.5rem;
+          height: 0.06rem;
+        "
+      ></div>
+      <div
+        style="
+          position: absolute;
+          top: 40.91rem;
+          left: 32.97rem;
+          border-top: 1px solid #cccdce;
+          box-sizing: border-box;
+          width: 78.5rem;
+          height: 0.06rem;
+        "
+      ></div>
+      <img
+        style="
+          position: absolute;
+          height: 1.09%;
+          width: 1.17%;
+          top: 16.46%;
+          right: 4.64%;
+          bottom: 82.44%;
+          left: 94.19%;
+          max-width: 100%;
+          overflow: hidden;
+          max-height: 100%;
+        "
+        alt=""
+        src="./public/group-1634.svg"
+      />
+
+      <div
+        style="
+          position: absolute;
+          top: 6.5rem;
+          left: 2rem;
+          width: 22.69rem;
+          height: 1.38rem;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 0.5rem;
+          color: rgba(22, 28, 36, 0.8);
+        "
+      >
+        <div
+          style="
+            border-radius: 4px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+          "
+        >
+          <div
+            style="
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: flex-start;
+              gap: 0.5rem;
+            "
+          >
+            <img
+              style="
+                position: relative;
+                width: 0.75rem;
+                height: 0.75rem;
+                overflow: hidden;
+                flex-shrink: 0;
+                display: none;
+              "
+              alt=""
+              src="./public/iconfilledappsettings2.svg"
+            />
+
+            <div style="position: relative; line-height: 1.38rem">
+              TRANG CHỦ
+            </div>
+            <img
+              style="
+                position: relative;
+                width: 0.75rem;
+                height: 0.75rem;
+                overflow: hidden;
+                flex-shrink: 0;
+              "
+              alt=""
+              src="./public/iconoutlinedirectionrightarrow.svg"
+            />
+          </div>
+        </div>
+        <div
+          style="
+            border-radius: 4px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+          "
+        >
+          <div
+            style="
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: flex-start;
+              gap: 0.5rem;
+            "
+          >
+            <img
+              style="
+                position: relative;
+                width: 0.75rem;
+                height: 0.75rem;
+                overflow: hidden;
+                flex-shrink: 0;
+                display: none;
+              "
+              alt=""
+              src="./public/iconfilledappsettings2.svg"
+            />
+
+            <div style="position: relative; line-height: 1.38rem">
+              TÀI KHOẢN
+            </div>
+            <img
+              style="
+                position: relative;
+                width: 0.75rem;
+                height: 0.75rem;
+                overflow: hidden;
+                flex-shrink: 0;
+              "
+              alt=""
+              src="./public/iconoutlinedirectionrightarrow.svg"
+            />
+          </div>
+        </div>
+        <div
+          style="
+            border-radius: 4px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            color: #161c24;
+          "
+        >
+          <div
+            style="
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: flex-start;
+              gap: 0.5rem;
+            "
+          >
+            <img
+              style="
+                position: relative;
+                width: 0.75rem;
+                height: 0.75rem;
+                overflow: hidden;
+                flex-shrink: 0;
+                display: none;
+              "
+              alt=""
+              src="./public/iconfilledappsettings3.svg"
+            />
+
+            <div
+              style="position: relative; line-height: 1.38rem; font-weight: 600"
+            >
+              THÔNG TIN CÁ NHÂN
+            </div>
+            <img
+              style="
+                position: relative;
+                width: 0.75rem;
+                height: 0.75rem;
+                overflow: hidden;
+                flex-shrink: 0;
+                display: none;
+              "
+              alt=""
+              src="./public/iconoutlinedirectionrightarrow1.svg"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

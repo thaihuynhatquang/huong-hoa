@@ -1,0 +1,2095 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap"
+    />
+
+    <style>
+      body {
+        margin: 0;
+        line-height: normal;
+      }
+
+      .popup-overlay {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        inset: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 0.63rem;
+        box-sizing: border-box;
+        max-width: 90%;
+        max-height: 90%;
+        overflow: auto;
+        text-align: left;
+        font-size: 0.88rem;
+        color: rgba(22, 28, 36, 0.9);
+        font-family: Inter;
+      "
+    >
+      <div
+        style="
+          background-color: #f9f9f9;
+          box-shadow: 0px 12px 24px -4px rgba(145, 158, 171, 0.12),
+            0px 0px 2px rgba(145, 158, 171, 0.2);
+          width: 35.75rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-start;
+          padding: 2.5rem;
+          box-sizing: border-box;
+          gap: 2.5rem;
+        "
+      >
+        <div
+          style="
+            align-self: stretch;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 1.88rem;
+            color: #161c24;
+          "
+        >
+          <div
+            style="
+              flex: 1;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: flex-start;
+            "
+          >
+            <div
+              style="
+                align-self: stretch;
+                position: relative;
+                line-height: 2.38rem;
+                font-weight: 600;
+              "
+            >
+              ĐĂNG NHẬP
+            </div>
+          </div>
+          <div
+            style="
+              width: 8.25rem;
+              height: 4.13rem;
+              display: none;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: flex-start;
+            "
+          >
+            <img
+              style="
+                align-self: stretch;
+                flex: 1;
+                position: relative;
+                max-width: 100%;
+                overflow: hidden;
+                max-height: 100%;
+                object-fit: cover;
+              "
+              alt=""
+              src="./public/image-2@2x.png"
+            />
+          </div>
+        </div>
+        <div
+          style="
+            align-self: stretch;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+          "
+        >
+          <div
+            style="
+              align-self: stretch;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-end;
+              justify-content: flex-start;
+              gap: 1.5rem;
+            "
+          >
+            <div
+              style="
+                align-self: stretch;
+                height: 13.13rem;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                gap: 1rem;
+              "
+            >
+              <div
+                style="
+                  align-self: stretch;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  gap: 0.5rem;
+                "
+              >
+                <div
+                  style="
+                    align-self: stretch;
+                    position: relative;
+                    line-height: 1.38rem;
+                    font-weight: 500;
+                  "
+                >
+                  EMAIL HOẶC SỐ ĐIỆN THOẠI
+                </div>
+                <div
+                  style="
+                    align-self: stretch;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 0.5rem;
+                  "
+                >
+                  <div
+                    style="
+                      align-self: stretch;
+                      display: none;
+                      flex-direction: row;
+                      align-items: flex-start;
+                      justify-content: flex-start;
+                      gap: 0.25rem;
+                    "
+                  >
+                    <div
+                      style="
+                        overflow: hidden;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+                        gap: 0.5rem;
+                      "
+                    >
+                      <div
+                        style="
+                          display: flex;
+                          flex-direction: column;
+                          align-items: flex-start;
+                          justify-content: flex-start;
+                          gap: 0.25rem;
+                        "
+                      >
+                        <div
+                          style="
+                            position: relative;
+                            line-height: 1.38rem;
+                            font-weight: 500;
+                            display: none;
+                          "
+                        >
+                          Email
+                        </div>
+                        <div
+                          style="
+                            align-self: stretch;
+                            position: relative;
+                            font-size: 0.75rem;
+                            line-height: 1.13rem;
+                            color: rgba(22, 28, 36, 0.64);
+                            display: none;
+                          "
+                        >
+                          Subtitle
+                        </div>
+                      </div>
+                      <div
+                        style="
+                          align-self: stretch;
+                          position: relative;
+                          line-height: 1.38rem;
+                          color: rgba(22, 28, 36, 0.8);
+                          display: none;
+                        "
+                      >
+                        Body content
+                      </div>
+                    </div>
+                    <div
+                      style="
+                        overflow: hidden;
+                        display: none;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+                        gap: 0.5rem;
+                        color: #ff3d3d;
+                      "
+                    >
+                      <div
+                        style="
+                          display: flex;
+                          flex-direction: column;
+                          align-items: flex-start;
+                          justify-content: flex-start;
+                          gap: 0.25rem;
+                        "
+                      >
+                        <div style="position: relative; line-height: 1.38rem">
+                          *
+                        </div>
+                        <div
+                          style="
+                            position: relative;
+                            font-size: 0.75rem;
+                            line-height: 1.13rem;
+                            color: rgba(22, 28, 36, 0.64);
+                            display: none;
+                          "
+                        >
+                          Subtitle
+                        </div>
+                      </div>
+                      <div
+                        style="
+                          position: relative;
+                          line-height: 1.38rem;
+                          color: rgba(22, 28, 36, 0.8);
+                          display: none;
+                        "
+                      >
+                        Body content
+                      </div>
+                    </div>
+                  </div>
+                  <input
+                    style="
+                      border: 1px solid rgba(22, 28, 36, 0.2);
+                      font-family: Inter;
+                      font-size: 0.88rem;
+                      background-color: #fff;
+                      align-self: stretch;
+                      box-sizing: border-box;
+                      height: 3rem;
+                      overflow: hidden;
+                      flex-shrink: 0;
+                      display: flex;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: flex-start;
+                      padding: 0rem 1rem;
+                      color: black;
+                    "
+                    placeholder="Nhập email hoặc số điện thoại"
+                    type="email"
+                  />
+
+                  <div
+                    style="
+                      align-self: stretch;
+                      overflow: hidden;
+                      display: none;
+                      flex-direction: column;
+                      align-items: flex-start;
+                      justify-content: center;
+                      gap: 0.5rem;
+                      font-size: 0.75rem;
+                      color: rgba(22, 28, 36, 0.64);
+                    "
+                  >
+                    <div
+                      style="
+                        align-self: stretch;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: flex-start;
+                        gap: 0.25rem;
+                      "
+                    >
+                      <div
+                        style="
+                          align-self: stretch;
+                          position: relative;
+                          line-height: 1.13rem;
+                        "
+                      >
+                        Sub message line up to 2 line
+                      </div>
+                      <div
+                        style="
+                          align-self: stretch;
+                          position: relative;
+                          line-height: 1.13rem;
+                          display: none;
+                          height: 1.13rem;
+                          flex-shrink: 0;
+                        "
+                      >
+                        Subtitle
+                      </div>
+                    </div>
+                    <div
+                      style="
+                        align-self: stretch;
+                        position: relative;
+                        font-size: 0.88rem;
+                        line-height: 1.38rem;
+                        color: rgba(22, 28, 36, 0.8);
+                        display: none;
+                      "
+                    >
+                      Body content
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                style="
+                  align-self: stretch;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  gap: 0.5rem;
+                "
+              >
+                <div
+                  style="
+                    align-self: stretch;
+                    position: relative;
+                    line-height: 1.38rem;
+                    font-weight: 500;
+                  "
+                >
+                  MẬT KHẨU
+                </div>
+                <div
+                  style="
+                    align-self: stretch;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 0.5rem;
+                  "
+                >
+                  <div
+                    style="
+                      align-self: stretch;
+                      display: none;
+                      flex-direction: row;
+                      align-items: flex-start;
+                      justify-content: flex-start;
+                      gap: 0.25rem;
+                    "
+                  >
+                    <div
+                      style="
+                        overflow: hidden;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+                        gap: 0.5rem;
+                      "
+                    >
+                      <div
+                        style="
+                          display: flex;
+                          flex-direction: column;
+                          align-items: flex-start;
+                          justify-content: flex-start;
+                          gap: 0.25rem;
+                        "
+                      >
+                        <div
+                          style="
+                            position: relative;
+                            line-height: 1.38rem;
+                            font-weight: 500;
+                            display: none;
+                          "
+                        >
+                          Email
+                        </div>
+                        <div
+                          style="
+                            align-self: stretch;
+                            position: relative;
+                            font-size: 0.75rem;
+                            line-height: 1.13rem;
+                            color: rgba(22, 28, 36, 0.64);
+                            display: none;
+                          "
+                        >
+                          Subtitle
+                        </div>
+                      </div>
+                      <div
+                        style="
+                          align-self: stretch;
+                          position: relative;
+                          line-height: 1.38rem;
+                          color: rgba(22, 28, 36, 0.8);
+                          display: none;
+                        "
+                      >
+                        Body content
+                      </div>
+                    </div>
+                    <div
+                      style="
+                        overflow: hidden;
+                        display: none;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+                        gap: 0.5rem;
+                        color: #ff3d3d;
+                      "
+                    >
+                      <div
+                        style="
+                          display: flex;
+                          flex-direction: column;
+                          align-items: flex-start;
+                          justify-content: flex-start;
+                          gap: 0.25rem;
+                        "
+                      >
+                        <div style="position: relative; line-height: 1.38rem">
+                          *
+                        </div>
+                        <div
+                          style="
+                            position: relative;
+                            font-size: 0.75rem;
+                            line-height: 1.13rem;
+                            color: rgba(22, 28, 36, 0.64);
+                            display: none;
+                          "
+                        >
+                          Subtitle
+                        </div>
+                      </div>
+                      <div
+                        style="
+                          position: relative;
+                          line-height: 1.38rem;
+                          color: rgba(22, 28, 36, 0.8);
+                          display: none;
+                        "
+                      >
+                        Body content
+                      </div>
+                    </div>
+                  </div>
+                  <input
+                    style="
+                      border: 1px solid rgba(22, 28, 36, 0.2);
+                      font-family: Inter;
+                      font-size: 0.88rem;
+                      background-color: #fff;
+                      align-self: stretch;
+                      box-sizing: border-box;
+                      height: 3rem;
+                      overflow: hidden;
+                      flex-shrink: 0;
+                      display: flex;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: flex-start;
+                      padding: 0rem 1rem;
+                      color: black;
+                    "
+                    placeholder="Nhập mật khẩu"
+                    type="password"
+                  />
+
+                  <div
+                    style="
+                      align-self: stretch;
+                      overflow: hidden;
+                      display: none;
+                      flex-direction: column;
+                      align-items: flex-start;
+                      justify-content: center;
+                      gap: 0.5rem;
+                      font-size: 0.75rem;
+                      color: rgba(22, 28, 36, 0.64);
+                    "
+                  >
+                    <div
+                      style="
+                        align-self: stretch;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: flex-start;
+                        gap: 0.25rem;
+                      "
+                    >
+                      <div
+                        style="
+                          align-self: stretch;
+                          position: relative;
+                          line-height: 1.13rem;
+                        "
+                      >
+                        Sub message line up to 2 line
+                      </div>
+                      <div
+                        style="
+                          align-self: stretch;
+                          position: relative;
+                          line-height: 1.13rem;
+                          display: none;
+                          height: 1.13rem;
+                          flex-shrink: 0;
+                        "
+                      >
+                        Subtitle
+                      </div>
+                    </div>
+                    <div
+                      style="
+                        align-self: stretch;
+                        position: relative;
+                        font-size: 0.88rem;
+                        line-height: 1.38rem;
+                        color: rgba(22, 28, 36, 0.8);
+                        display: none;
+                      "
+                    >
+                      Body content
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                style="
+                  align-self: stretch;
+                  display: flex;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  gap: 1rem;
+                "
+              >
+                <div
+                  style="
+                    flex: 1;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 0.5rem;
+                  "
+                >
+                  <div
+                    style="
+                      overflow: hidden;
+                      display: none;
+                      flex-direction: column;
+                      align-items: flex-start;
+                      justify-content: center;
+                      gap: 0.5rem;
+                    "
+                  >
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: flex-start;
+                        gap: 0.25rem;
+                      "
+                    >
+                      <div style="position: relative; line-height: 1.38rem">
+                        Label
+                      </div>
+                      <div
+                        style="
+                          position: relative;
+                          font-size: 0.75rem;
+                          line-height: 1.13rem;
+                          color: rgba(22, 28, 36, 0.64);
+                          display: none;
+                        "
+                      >
+                        Subtitle
+                      </div>
+                    </div>
+                    <div
+                      style="
+                        position: relative;
+                        line-height: 1.38rem;
+                        color: rgba(22, 28, 36, 0.8);
+                        display: none;
+                      "
+                    >
+                      Body content
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      flex-direction: row;
+                      align-items: flex-start;
+                      justify-content: flex-start;
+                    "
+                  >
+                    <input
+                      style="
+                        position: relative;
+                        background-color: #161c24;
+                        width: 1.25rem;
+                        height: 1.25rem;
+                        overflow: hidden;
+                        flex-shrink: 0;
+                      "
+                      required="{true}"
+                      checked="{true}"
+                      type="checkbox"
+                    />
+                  </div>
+                  <div
+                    style="
+                      flex: 1;
+                      overflow: hidden;
+                      display: flex;
+                      flex-direction: column;
+                      align-items: flex-start;
+                      justify-content: center;
+                      gap: 0.5rem;
+                    "
+                  >
+                    <div
+                      style="
+                        align-self: stretch;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+                        gap: 0.25rem;
+                      "
+                    >
+                      <div
+                        style="
+                          align-self: stretch;
+                          position: relative;
+                          line-height: 1.38rem;
+                        "
+                      >
+                        NHỚ MẬT KHẨU
+                      </div>
+                      <div
+                        style="
+                          position: relative;
+                          font-size: 0.75rem;
+                          line-height: 1.13rem;
+                          color: rgba(22, 28, 36, 0.64);
+                          display: none;
+                        "
+                      >
+                        Subtitle
+                      </div>
+                    </div>
+                    <div
+                      style="
+                        position: relative;
+                        line-height: 1.38rem;
+                        color: rgba(22, 28, 36, 0.8);
+                        display: none;
+                      "
+                    >
+                      Body content
+                    </div>
+                  </div>
+                </div>
+                <button
+                  style="
+                    cursor: pointer;
+                    border: none;
+                    padding: 0;
+                    background-color: transparent;
+                    flex: 1;
+                    position: relative;
+                    font-size: 0.88rem;
+                    line-height: 1.38rem;
+                    font-weight: 600;
+                    font-family: Inter;
+                    color: #161c24;
+                    text-align: right;
+                    display: inline-block;
+                  "
+                >
+                  QUÊN MẬT KHẨU?
+                </button>
+              </div>
+            </div>
+            <div
+              style="
+                align-self: stretch;
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: flex-end;
+              "
+            >
+              <div
+                style="
+                  flex: 1;
+                  display: flex;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                "
+              >
+                <button
+                  style="
+                    cursor: pointer;
+                    border: none;
+                    padding: 0;
+                    background-color: #161c24;
+                    align-self: stretch;
+                    flex: 1;
+                    overflow: hidden;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                  id="popupbutton"
+                >
+                  <div
+                    style="
+                      height: 4rem;
+                      display: flex;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: flex-start;
+                      padding: 0rem 1.5rem;
+                      box-sizing: border-box;
+                      gap: 0.5rem;
+                    "
+                  >
+                    <img
+                      style="
+                        position: relative;
+                        width: 1.5rem;
+                        height: 1.5rem;
+                        overflow: hidden;
+                        flex-shrink: 0;
+                        display: none;
+                      "
+                      alt=""
+                      src="./public/iconfilledappsettings5.svg"
+                    />
+
+                    <div
+                      style="
+                        position: relative;
+                        font-size: 1.13rem;
+                        line-height: 1.75rem;
+                        font-weight: 600;
+                        font-family: Inter;
+                        color: #fff;
+                        text-align: left;
+                      "
+                    >
+                      ĐĂNG NHẬP
+                    </div>
+                    <img
+                      style="
+                        position: relative;
+                        width: 1.5rem;
+                        height: 1.5rem;
+                        overflow: hidden;
+                        flex-shrink: 0;
+                        display: none;
+                      "
+                      alt=""
+                      src="./public/iconoutlinedirectiondownarrow4.svg"
+                    />
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          style="
+            align-self: stretch;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 1.25rem;
+            text-align: center;
+            color: rgba(22, 28, 36, 0.64);
+          "
+        >
+          <div
+            style="
+              align-self: stretch;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: flex-start;
+              gap: 0.75rem;
+            "
+          >
+            <div
+              style="
+                flex: 1;
+                position: relative;
+                border-top: 1px solid rgba(22, 28, 36, 0.12);
+                box-sizing: border-box;
+                height: 0.06rem;
+              "
+            ></div>
+            <div
+              style="
+                flex: 1;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 0.5rem;
+              "
+            >
+              <div
+                style="
+                  align-self: stretch;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+                  gap: 0.25rem;
+                "
+              >
+                <div style="position: relative; line-height: 1.38rem">
+                  HOẶC ĐĂNG NHẬP VỚI
+                </div>
+                <div
+                  style="
+                    align-self: stretch;
+                    position: relative;
+                    font-size: 0.75rem;
+                    line-height: 1.13rem;
+                    display: none;
+                  "
+                >
+                  Subtitle
+                </div>
+              </div>
+              <div
+                style="
+                  align-self: stretch;
+                  position: relative;
+                  line-height: 1.38rem;
+                  color: rgba(22, 28, 36, 0.8);
+                  display: none;
+                "
+              >
+                Body content
+              </div>
+            </div>
+            <div
+              style="
+                flex: 1;
+                position: relative;
+                border-top: 1px solid rgba(22, 28, 36, 0.12);
+                box-sizing: border-box;
+                height: 0.06rem;
+              "
+            ></div>
+          </div>
+          <div
+            style="
+              align-self: stretch;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: flex-start;
+              text-align: left;
+              font-size: 1rem;
+              color: rgba(22, 28, 36, 0.9);
+            "
+          >
+            <div
+              style="
+                align-self: stretch;
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: flex-start;
+                gap: 1rem;
+              "
+            >
+              <div
+                style="
+                  flex: 1;
+                  border-radius: 8px;
+                  border: 1px solid rgba(22, 28, 36, 0.12);
+                  overflow: hidden;
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: center;
+                  padding: 0.75rem 2.5rem;
+                  gap: 1rem;
+                "
+              >
+                <div
+                  style="
+                    border-radius: 4px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                  "
+                >
+                  <img
+                    style="
+                      position: relative;
+                      width: 1.5rem;
+                      height: 1.5rem;
+                      z-index: 0;
+                    "
+                    alt=""
+                    src="./public/media-styleicon-only16.svg"
+                  />
+
+                  <img
+                    style="
+                      position: absolute;
+                      margin: 0 !important;
+                      height: 100%;
+                      width: 100%;
+                      top: 0%;
+                      right: 0%;
+                      bottom: 0%;
+                      left: 0%;
+                      border-radius: 8px;
+                      max-width: 100%;
+                      overflow: hidden;
+                      max-height: 100%;
+                      display: none;
+                      z-index: 1;
+                    "
+                    alt=""
+                    src="./public/badge2.svg"
+                  />
+                </div>
+                <div
+                  style="
+                    overflow: hidden;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    gap: 1rem;
+                  "
+                >
+                  <div
+                    style="
+                      overflow: hidden;
+                      display: flex;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: center;
+                      gap: 1rem;
+                    "
+                  >
+                    <div
+                      style="
+                        overflow: hidden;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+                        gap: 0.5rem;
+                      "
+                    >
+                      <div
+                        style="
+                          display: flex;
+                          flex-direction: column;
+                          align-items: flex-start;
+                          justify-content: flex-start;
+                          gap: 0.25rem;
+                        "
+                      >
+                        <div
+                          style="
+                            position: relative;
+                            line-height: 1.5rem;
+                            font-weight: 500;
+                          "
+                        >
+                          GOOGLE
+                        </div>
+                        <div
+                          style="
+                            align-self: stretch;
+                            position: relative;
+                            font-size: 0.75rem;
+                            line-height: 1.13rem;
+                            color: rgba(22, 28, 36, 0.64);
+                            display: none;
+                          "
+                        >
+                          Subtitle
+                        </div>
+                      </div>
+                      <div
+                        style="
+                          align-self: stretch;
+                          position: relative;
+                          font-size: 0.88rem;
+                          line-height: 1.38rem;
+                          color: rgba(22, 28, 36, 0.8);
+                          display: none;
+                        "
+                      >
+                        Body content
+                      </div>
+                    </div>
+                    <div
+                      style="
+                        border-radius: 4px;
+                        overflow: hidden;
+                        display: none;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: flex-end;
+                        font-size: 0.88rem;
+                        color: #3366ff;
+                      "
+                    >
+                      <div
+                        style="
+                          display: flex;
+                          flex-direction: row;
+                          align-items: center;
+                          justify-content: flex-start;
+                          gap: 0.5rem;
+                        "
+                      >
+                        <img
+                          style="
+                            position: relative;
+                            width: 1rem;
+                            height: 1rem;
+                            overflow: hidden;
+                            flex-shrink: 0;
+                            display: none;
+                          "
+                          alt=""
+                          src="./public/iconfilledappsettings7.svg"
+                        />
+
+                        <div
+                          style="
+                            position: relative;
+                            line-height: 1.38rem;
+                            font-weight: 600;
+                          "
+                        >
+                          Action
+                        </div>
+                        <img
+                          style="
+                            position: relative;
+                            width: 1rem;
+                            height: 1rem;
+                            overflow: hidden;
+                            flex-shrink: 0;
+                            display: none;
+                          "
+                          alt=""
+                          src="./public/iconfilledappsettings7.svg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      display: none;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: flex-start;
+                      gap: 0.5rem;
+                      font-size: 0.88rem;
+                      color: #161c24;
+                    "
+                  >
+                    <div
+                      style="
+                        border-radius: 6px;
+                        background-color: rgba(145, 158, 171, 0.12);
+                        overflow: hidden;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                      "
+                    >
+                      <div
+                        style="
+                          height: 2rem;
+                          display: flex;
+                          flex-direction: row;
+                          align-items: center;
+                          justify-content: flex-start;
+                          padding: 0rem 0.63rem;
+                          box-sizing: border-box;
+                          gap: 0.5rem;
+                        "
+                      >
+                        <img
+                          style="
+                            position: relative;
+                            width: 1rem;
+                            height: 1rem;
+                            overflow: hidden;
+                            flex-shrink: 0;
+                            display: none;
+                          "
+                          alt=""
+                          src="./public/iconfilledappsettings.svg"
+                        />
+
+                        <div
+                          style="
+                            position: relative;
+                            line-height: 1.38rem;
+                            font-weight: 600;
+                          "
+                        >
+                          Button
+                        </div>
+                        <img
+                          style="
+                            position: relative;
+                            width: 1rem;
+                            height: 1rem;
+                            overflow: hidden;
+                            flex-shrink: 0;
+                            display: none;
+                          "
+                          alt=""
+                          src="./public/iconfilledappsettings.svg"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      style="
+                        border-radius: 6px;
+                        background-color: #3366ff;
+                        overflow: hidden;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                        color: #fff;
+                      "
+                    >
+                      <div
+                        style="
+                          height: 2rem;
+                          display: flex;
+                          flex-direction: row;
+                          align-items: center;
+                          justify-content: flex-start;
+                          padding: 0rem 0.63rem;
+                          box-sizing: border-box;
+                          gap: 0.5rem;
+                        "
+                      >
+                        <img
+                          style="
+                            position: relative;
+                            width: 1rem;
+                            height: 1rem;
+                            overflow: hidden;
+                            flex-shrink: 0;
+                            display: none;
+                          "
+                          alt=""
+                          src="./public/iconfilledappsettings4.svg"
+                        />
+
+                        <div
+                          style="
+                            position: relative;
+                            line-height: 1.38rem;
+                            font-weight: 600;
+                          "
+                        >
+                          Button
+                        </div>
+                        <img
+                          style="
+                            position: relative;
+                            width: 1rem;
+                            height: 1rem;
+                            overflow: hidden;
+                            flex-shrink: 0;
+                            display: none;
+                          "
+                          alt=""
+                          src="./public/iconfilledappsettings4.svg"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      style="
+                        border-radius: 6px;
+                        background-color: rgba(145, 158, 171, 0.12);
+                        overflow: hidden;
+                        display: none;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                      "
+                    >
+                      <div
+                        style="
+                          height: 2rem;
+                          display: flex;
+                          flex-direction: row;
+                          align-items: center;
+                          justify-content: flex-start;
+                          padding: 0rem 0.63rem;
+                          box-sizing: border-box;
+                          gap: 0.5rem;
+                        "
+                      >
+                        <img
+                          style="
+                            position: relative;
+                            width: 1rem;
+                            height: 1rem;
+                            overflow: hidden;
+                            flex-shrink: 0;
+                            display: none;
+                          "
+                          alt=""
+                          src="./public/iconfilledappsettings.svg"
+                        />
+
+                        <div
+                          style="
+                            position: relative;
+                            line-height: 1.38rem;
+                            font-weight: 600;
+                          "
+                        >
+                          Button
+                        </div>
+                        <img
+                          style="
+                            position: relative;
+                            width: 1rem;
+                            height: 1rem;
+                            overflow: hidden;
+                            flex-shrink: 0;
+                            display: none;
+                          "
+                          alt=""
+                          src="./public/iconfilledappsettings.svg"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      style="
+                        border-radius: 6px;
+                        background-color: #3366ff;
+                        overflow: hidden;
+                        display: none;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                        color: #fff;
+                      "
+                    >
+                      <div
+                        style="
+                          height: 2rem;
+                          display: flex;
+                          flex-direction: row;
+                          align-items: center;
+                          justify-content: flex-start;
+                          padding: 0rem 0.63rem;
+                          box-sizing: border-box;
+                          gap: 0.5rem;
+                        "
+                      >
+                        <img
+                          style="
+                            position: relative;
+                            width: 1rem;
+                            height: 1rem;
+                            overflow: hidden;
+                            flex-shrink: 0;
+                            display: none;
+                          "
+                          alt=""
+                          src="./public/iconfilledappsettings4.svg"
+                        />
+
+                        <div
+                          style="
+                            position: relative;
+                            line-height: 1.38rem;
+                            font-weight: 600;
+                          "
+                        >
+                          Button
+                        </div>
+                        <img
+                          style="
+                            position: relative;
+                            width: 1rem;
+                            height: 1rem;
+                            overflow: hidden;
+                            flex-shrink: 0;
+                            display: none;
+                          "
+                          alt=""
+                          src="./public/iconfilledappsettings4.svg"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      style="
+                        border-radius: 6px;
+                        background-color: #f3f5f8;
+                        overflow: hidden;
+                        display: none;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                      "
+                    >
+                      <div
+                        style="
+                          height: 2rem;
+                          display: flex;
+                          flex-direction: row;
+                          align-items: center;
+                          justify-content: flex-start;
+                          padding: 0rem 0.63rem;
+                          box-sizing: border-box;
+                          gap: 0.5rem;
+                        "
+                      >
+                        <img
+                          style="
+                            position: relative;
+                            width: 1rem;
+                            height: 1rem;
+                            overflow: hidden;
+                            flex-shrink: 0;
+                            display: none;
+                          "
+                          alt=""
+                          src="./public/iconfilledappsettings.svg"
+                        />
+
+                        <div
+                          style="
+                            position: relative;
+                            line-height: 1.38rem;
+                            font-weight: 600;
+                          "
+                        >
+                          Button
+                        </div>
+                        <img
+                          style="
+                            position: relative;
+                            width: 1rem;
+                            height: 1rem;
+                            overflow: hidden;
+                            flex-shrink: 0;
+                            display: none;
+                          "
+                          alt=""
+                          src="./public/iconfilledappsettings.svg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                style="
+                  flex: 1;
+                  border-radius: 8px;
+                  border: 1px solid rgba(22, 28, 36, 0.12);
+                  overflow: hidden;
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: center;
+                  padding: 0.75rem 2.5rem;
+                  gap: 1rem;
+                "
+              >
+                <div
+                  style="
+                    border-radius: 4px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                  "
+                >
+                  <img
+                    style="
+                      position: relative;
+                      width: 1.5rem;
+                      height: 1.5rem;
+                      z-index: 0;
+                    "
+                    alt=""
+                    src="./public/media-styleicon-only17.svg"
+                  />
+
+                  <img
+                    style="
+                      position: absolute;
+                      margin: 0 !important;
+                      height: 100%;
+                      width: 100%;
+                      top: 0%;
+                      right: 0%;
+                      bottom: 0%;
+                      left: 0%;
+                      border-radius: 8px;
+                      max-width: 100%;
+                      overflow: hidden;
+                      max-height: 100%;
+                      display: none;
+                      z-index: 1;
+                    "
+                    alt=""
+                    src="./public/badge2.svg"
+                  />
+                </div>
+                <div
+                  style="
+                    overflow: hidden;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    gap: 1rem;
+                  "
+                >
+                  <div
+                    style="
+                      overflow: hidden;
+                      display: flex;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: center;
+                      gap: 1rem;
+                    "
+                  >
+                    <div
+                      style="
+                        overflow: hidden;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+                        gap: 0.5rem;
+                      "
+                    >
+                      <div
+                        style="
+                          align-self: stretch;
+                          display: flex;
+                          flex-direction: column;
+                          align-items: flex-start;
+                          justify-content: flex-start;
+                          gap: 0.25rem;
+                        "
+                      >
+                        <div
+                          style="
+                            position: relative;
+                            line-height: 1.5rem;
+                            font-weight: 500;
+                          "
+                        >
+                          FACEBOOK
+                        </div>
+                        <div
+                          style="
+                            align-self: stretch;
+                            position: relative;
+                            font-size: 0.75rem;
+                            line-height: 1.13rem;
+                            color: rgba(22, 28, 36, 0.64);
+                            display: none;
+                          "
+                        >
+                          Subtitle
+                        </div>
+                      </div>
+                      <div
+                        style="
+                          align-self: stretch;
+                          position: relative;
+                          font-size: 0.88rem;
+                          line-height: 1.38rem;
+                          color: rgba(22, 28, 36, 0.8);
+                          display: none;
+                        "
+                      >
+                        Body content
+                      </div>
+                    </div>
+                    <div
+                      style="
+                        border-radius: 4px;
+                        overflow: hidden;
+                        display: none;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: flex-end;
+                        font-size: 0.88rem;
+                        color: #3366ff;
+                      "
+                    >
+                      <div
+                        style="
+                          display: flex;
+                          flex-direction: row;
+                          align-items: center;
+                          justify-content: flex-start;
+                          gap: 0.5rem;
+                        "
+                      >
+                        <img
+                          style="
+                            position: relative;
+                            width: 1rem;
+                            height: 1rem;
+                            overflow: hidden;
+                            flex-shrink: 0;
+                            display: none;
+                          "
+                          alt=""
+                          src="./public/iconfilledappsettings7.svg"
+                        />
+
+                        <div
+                          style="
+                            position: relative;
+                            line-height: 1.38rem;
+                            font-weight: 600;
+                          "
+                        >
+                          Action
+                        </div>
+                        <img
+                          style="
+                            position: relative;
+                            width: 1rem;
+                            height: 1rem;
+                            overflow: hidden;
+                            flex-shrink: 0;
+                            display: none;
+                          "
+                          alt=""
+                          src="./public/iconfilledappsettings7.svg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      display: none;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: flex-start;
+                      gap: 0.5rem;
+                      font-size: 0.88rem;
+                      color: #161c24;
+                    "
+                  >
+                    <div
+                      style="
+                        border-radius: 6px;
+                        background-color: rgba(145, 158, 171, 0.12);
+                        overflow: hidden;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                      "
+                    >
+                      <div
+                        style="
+                          height: 2rem;
+                          display: flex;
+                          flex-direction: row;
+                          align-items: center;
+                          justify-content: flex-start;
+                          padding: 0rem 0.63rem;
+                          box-sizing: border-box;
+                          gap: 0.5rem;
+                        "
+                      >
+                        <img
+                          style="
+                            position: relative;
+                            width: 1rem;
+                            height: 1rem;
+                            overflow: hidden;
+                            flex-shrink: 0;
+                            display: none;
+                          "
+                          alt=""
+                          src="./public/iconfilledappsettings.svg"
+                        />
+
+                        <div
+                          style="
+                            position: relative;
+                            line-height: 1.38rem;
+                            font-weight: 600;
+                          "
+                        >
+                          Button
+                        </div>
+                        <img
+                          style="
+                            position: relative;
+                            width: 1rem;
+                            height: 1rem;
+                            overflow: hidden;
+                            flex-shrink: 0;
+                            display: none;
+                          "
+                          alt=""
+                          src="./public/iconfilledappsettings.svg"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      style="
+                        border-radius: 6px;
+                        background-color: #3366ff;
+                        overflow: hidden;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                        color: #fff;
+                      "
+                    >
+                      <div
+                        style="
+                          height: 2rem;
+                          display: flex;
+                          flex-direction: row;
+                          align-items: center;
+                          justify-content: flex-start;
+                          padding: 0rem 0.63rem;
+                          box-sizing: border-box;
+                          gap: 0.5rem;
+                        "
+                      >
+                        <img
+                          style="
+                            position: relative;
+                            width: 1rem;
+                            height: 1rem;
+                            overflow: hidden;
+                            flex-shrink: 0;
+                            display: none;
+                          "
+                          alt=""
+                          src="./public/iconfilledappsettings4.svg"
+                        />
+
+                        <div
+                          style="
+                            position: relative;
+                            line-height: 1.38rem;
+                            font-weight: 600;
+                          "
+                        >
+                          Button
+                        </div>
+                        <img
+                          style="
+                            position: relative;
+                            width: 1rem;
+                            height: 1rem;
+                            overflow: hidden;
+                            flex-shrink: 0;
+                            display: none;
+                          "
+                          alt=""
+                          src="./public/iconfilledappsettings4.svg"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      style="
+                        border-radius: 6px;
+                        background-color: rgba(145, 158, 171, 0.12);
+                        overflow: hidden;
+                        display: none;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                      "
+                    >
+                      <div
+                        style="
+                          height: 2rem;
+                          display: flex;
+                          flex-direction: row;
+                          align-items: center;
+                          justify-content: flex-start;
+                          padding: 0rem 0.63rem;
+                          box-sizing: border-box;
+                          gap: 0.5rem;
+                        "
+                      >
+                        <img
+                          style="
+                            position: relative;
+                            width: 1rem;
+                            height: 1rem;
+                            overflow: hidden;
+                            flex-shrink: 0;
+                            display: none;
+                          "
+                          alt=""
+                          src="./public/iconfilledappsettings.svg"
+                        />
+
+                        <div
+                          style="
+                            position: relative;
+                            line-height: 1.38rem;
+                            font-weight: 600;
+                          "
+                        >
+                          Button
+                        </div>
+                        <img
+                          style="
+                            position: relative;
+                            width: 1rem;
+                            height: 1rem;
+                            overflow: hidden;
+                            flex-shrink: 0;
+                            display: none;
+                          "
+                          alt=""
+                          src="./public/iconfilledappsettings.svg"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      style="
+                        border-radius: 6px;
+                        background-color: #3366ff;
+                        overflow: hidden;
+                        display: none;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                        color: #fff;
+                      "
+                    >
+                      <div
+                        style="
+                          height: 2rem;
+                          display: flex;
+                          flex-direction: row;
+                          align-items: center;
+                          justify-content: flex-start;
+                          padding: 0rem 0.63rem;
+                          box-sizing: border-box;
+                          gap: 0.5rem;
+                        "
+                      >
+                        <img
+                          style="
+                            position: relative;
+                            width: 1rem;
+                            height: 1rem;
+                            overflow: hidden;
+                            flex-shrink: 0;
+                            display: none;
+                          "
+                          alt=""
+                          src="./public/iconfilledappsettings4.svg"
+                        />
+
+                        <div
+                          style="
+                            position: relative;
+                            line-height: 1.38rem;
+                            font-weight: 600;
+                          "
+                        >
+                          Button
+                        </div>
+                        <img
+                          style="
+                            position: relative;
+                            width: 1rem;
+                            height: 1rem;
+                            overflow: hidden;
+                            flex-shrink: 0;
+                            display: none;
+                          "
+                          alt=""
+                          src="./public/iconfilledappsettings4.svg"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      style="
+                        border-radius: 6px;
+                        background-color: #f3f5f8;
+                        overflow: hidden;
+                        display: none;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                      "
+                    >
+                      <div
+                        style="
+                          height: 2rem;
+                          display: flex;
+                          flex-direction: row;
+                          align-items: center;
+                          justify-content: flex-start;
+                          padding: 0rem 0.63rem;
+                          box-sizing: border-box;
+                          gap: 0.5rem;
+                        "
+                      >
+                        <img
+                          style="
+                            position: relative;
+                            width: 1rem;
+                            height: 1rem;
+                            overflow: hidden;
+                            flex-shrink: 0;
+                            display: none;
+                          "
+                          alt=""
+                          src="./public/iconfilledappsettings.svg"
+                        />
+
+                        <div
+                          style="
+                            position: relative;
+                            line-height: 1.38rem;
+                            font-weight: 600;
+                          "
+                        >
+                          Button
+                        </div>
+                        <img
+                          style="
+                            position: relative;
+                            width: 1rem;
+                            height: 1rem;
+                            overflow: hidden;
+                            flex-shrink: 0;
+                            display: none;
+                          "
+                          alt=""
+                          src="./public/iconfilledappsettings.svg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          style="
+            align-self: stretch;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 0.25rem;
+            text-align: right;
+          "
+        >
+          <div
+            style="
+              overflow: hidden;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-end;
+              justify-content: center;
+              gap: 0.5rem;
+            "
+          >
+            <div
+              style="
+                align-self: stretch;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                gap: 0.25rem;
+              "
+            >
+              <div style="position: relative; line-height: 1.38rem">
+                CHƯA CÓ TÀI KHOẢN?
+              </div>
+              <div
+                style="
+                  align-self: stretch;
+                  position: relative;
+                  font-size: 0.75rem;
+                  line-height: 1.13rem;
+                  color: rgba(22, 28, 36, 0.64);
+                  text-align: left;
+                  display: none;
+                "
+              >
+                Subtitle
+              </div>
+            </div>
+            <div
+              style="
+                align-self: stretch;
+                position: relative;
+                line-height: 1.38rem;
+                color: rgba(22, 28, 36, 0.8);
+                text-align: left;
+                display: none;
+              "
+            >
+              Body content
+            </div>
+          </div>
+          <button
+            style="
+              cursor: pointer;
+              border: none;
+              padding: 0;
+              background-color: transparent;
+              border-radius: 8px;
+              overflow: hidden;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+            "
+          >
+            <div
+              style="
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                gap: 0.5rem;
+              "
+            >
+              <img
+                style="
+                  position: relative;
+                  width: 1rem;
+                  height: 1rem;
+                  overflow: hidden;
+                  flex-shrink: 0;
+                  display: none;
+                "
+                alt=""
+                src="./public/iconfilledappsettings7.svg"
+              />
+
+              <div
+                style="
+                  position: relative;
+                  font-size: 0.88rem;
+                  line-height: 1.38rem;
+                  font-weight: 600;
+                  font-family: Inter;
+                  color: #161c24;
+                  text-align: left;
+                "
+              >
+                ĐĂNG KÝ NGAY
+              </div>
+              <img
+                style="
+                  position: relative;
+                  width: 1rem;
+                  height: 1rem;
+                  overflow: hidden;
+                  flex-shrink: 0;
+                  display: none;
+                "
+                alt=""
+                src="./public/iconfilledappsettings7.svg"
+              />
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var popupbutton = document.getElementById("popupbutton");
+      if (popupbutton) {
+        popupbutton.addEventListener("click", function (e) {
+          window.location.href = "./admin-overview.html";
+        });
+      }
+      </script>
+  </body>
+</html>

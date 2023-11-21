@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap"
+    />
+
+    <style>
+      body {
+        margin: 0;
+        line-height: normal;
+      }
+
+      .popup-overlay {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        inset: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 2rem;
+        text-align: left;
+        font-size: 1rem;
+        color: #000;
+        font-family: Inter;
+      "
+    >
+      <div
+        style="
+          overflow: hidden;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+        "
+      >
+        <div
+          style="
+            width: 2.5rem;
+            height: 2.5rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+          "
+        >
+          <img
+            style="
+              position: relative;
+              width: 1rem;
+              height: 1rem;
+              overflow: hidden;
+              flex-shrink: 0;
+            "
+            alt=""
+            src="./public/iconoutlinesuggestederemove1.svg"
+          />
+        </div>
+      </div>
+      <div
+        style="
+          flex: 1;
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          justify-content: flex-start;
+          gap: 1rem;
+        "
+      >
+        <img
+          style="
+            position: relative;
+            width: 8rem;
+            height: 8rem;
+            object-fit: cover;
+          "
+          alt=""
+          src="./public/rectangle-3@2x.png"
+        />
+
+        <div
+          style="
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+          "
+        >
+          <div
+            style="
+              height: 8rem;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: space-between;
+            "
+          >
+            <div
+              style="
+                position: relative;
+                text-transform: uppercase;
+                display: inline-block;
+                width: 18rem;
+              "
+            ></div>
+            <div
+              style="
+                align-self: stretch;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                gap: 0.5rem;
+                font-size: 0.75rem;
+                color: rgba(22, 28, 36, 0.9);
+              "
+            >
+              <div style="position: relative; line-height: 1.5rem">
+                SỐ LƯỢNG
+              </div>
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  justify-content: center;
+                  gap: 0.5rem;
+                  font-size: 0.88rem;
+                  color: #161c24;
+                "
+              >
+                <div
+                  style="
+                    align-self: stretch;
+                    display: none;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    gap: 0.25rem;
+                  "
+                >
+                  <div
+                    style="
+                      overflow: hidden;
+                      display: flex;
+                      flex-direction: column;
+                      align-items: flex-start;
+                      justify-content: center;
+                      gap: 0.5rem;
+                    "
+                  >
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: flex-start;
+                        gap: 0.25rem;
+                      "
+                    >
+                      <div
+                        style="
+                          position: relative;
+                          line-height: 1.38rem;
+                          font-weight: 500;
+                        "
+                      >
+                        Label
+                      </div>
+                      <div
+                        style="
+                          align-self: stretch;
+                          position: relative;
+                          font-size: 0.75rem;
+                          line-height: 1.13rem;
+                          color: rgba(22, 28, 36, 0.64);
+                          display: none;
+                        "
+                      >
+                        Subtitle
+                      </div>
+                    </div>
+                    <div
+                      style="
+                        align-self: stretch;
+                        position: relative;
+                        line-height: 1.38rem;
+                        color: rgba(22, 28, 36, 0.8);
+                        display: none;
+                      "
+                    >
+                      Body content
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      overflow: hidden;
+                      display: none;
+                      flex-direction: column;
+                      align-items: flex-start;
+                      justify-content: center;
+                      gap: 0.5rem;
+                      color: #ff3d3d;
+                    "
+                  >
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: flex-start;
+                        gap: 0.25rem;
+                      "
+                    >
+                      <div style="position: relative; line-height: 1.38rem">
+                        *
+                      </div>
+                      <div
+                        style="
+                          position: relative;
+                          font-size: 0.75rem;
+                          line-height: 1.13rem;
+                          color: rgba(22, 28, 36, 0.64);
+                          display: none;
+                        "
+                      >
+                        Subtitle
+                      </div>
+                    </div>
+                    <div
+                      style="
+                        position: relative;
+                        line-height: 1.38rem;
+                        color: rgba(22, 28, 36, 0.8);
+                        display: none;
+                      "
+                    >
+                      Body content
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: flex-start;
+                    text-align: center;
+                    font-size: 1rem;
+                    color: rgba(22, 28, 36, 0.8);
+                  "
+                >
+                  <div
+                    style="
+                      background-color: rgba(145, 158, 171, 0.12);
+                      overflow: hidden;
+                      display: flex;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: center;
+                    "
+                  >
+                    <div
+                      style="
+                        width: 2.5rem;
+                        height: 2.5rem;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                      "
+                    >
+                      <img
+                        style="
+                          position: relative;
+                          width: 1rem;
+                          height: 1rem;
+                          overflow: hidden;
+                          flex-shrink: 0;
+                        "
+                        alt=""
+                        src="./public/iconoutlinesuggestededelete.svg"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      align-self: stretch;
+                      width: 4rem;
+                      overflow: hidden;
+                      flex-shrink: 0;
+                      display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                      justify-content: center;
+                      gap: 0.5rem;
+                    "
+                  >
+                    <div
+                      style="
+                        align-self: stretch;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: flex-start;
+                        gap: 0.25rem;
+                      "
+                    >
+                      <div
+                        style="
+                          align-self: stretch;
+                          position: relative;
+                          line-height: 1.5rem;
+                        "
+                      >
+                        1
+                      </div>
+                      <div
+                        style="
+                          align-self: stretch;
+                          position: relative;
+                          font-size: 0.75rem;
+                          line-height: 1.13rem;
+                          color: rgba(22, 28, 36, 0.64);
+                          display: none;
+                        "
+                      >
+                        Subtitle
+                      </div>
+                    </div>
+                    <div
+                      style="
+                        align-self: stretch;
+                        position: relative;
+                        font-size: 0.88rem;
+                        line-height: 1.38rem;
+                        display: none;
+                      "
+                    >
+                      Body content
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      background-color: rgba(145, 158, 171, 0.12);
+                      overflow: hidden;
+                      display: flex;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: center;
+                    "
+                  >
+                    <div
+                      style="
+                        width: 2.5rem;
+                        height: 2.5rem;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                      "
+                    >
+                      <img
+                        style="
+                          position: relative;
+                          width: 1rem;
+                          height: 1rem;
+                          overflow: hidden;
+                          flex-shrink: 0;
+                        "
+                        alt=""
+                        src="./public/iconoutlinesuggestedeadd1.svg"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style="
+                    align-self: stretch;
+                    overflow: hidden;
+                    display: none;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+                    gap: 0.25rem;
+                    font-size: 0.75rem;
+                    color: rgba(22, 28, 36, 0.64);
+                  "
+                >
+                  <div
+                    style="
+                      align-self: stretch;
+                      overflow: hidden;
+                      display: flex;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: flex-start;
+                    "
+                  >
+                    <div
+                      style="flex: 1; position: relative; line-height: 1.13rem"
+                    >
+                      <p style="margin: 0">Sub message line up</p>
+                      <p style="margin: 0">to 2 line</p>
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      align-self: stretch;
+                      overflow: hidden;
+                      display: none;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: flex-start;
+                      color: #838a95;
+                    "
+                  >
+                    <div
+                      style="flex: 1; position: relative; line-height: 1.13rem"
+                    >
+                      Subtitle
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      align-self: stretch;
+                      overflow: hidden;
+                      display: none;
+                      flex-direction: row;
+                      align-items: flex-end;
+                      justify-content: flex-start;
+                      padding: 0.25rem 0rem 0rem;
+                      font-size: 0.88rem;
+                      color: rgba(0, 32, 77, 0.8);
+                    "
+                  >
+                    <div
+                      style="flex: 1; position: relative; line-height: 1.38rem"
+                    >
+                      Body content
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            style="
+              display: flex;
+              flex-direction: row;
+              align-items: flex-start;
+              justify-content: flex-end;
+              gap: 0.25rem;
+              font-size: 1.5rem;
+            "
+          >
+            <b style="position: relative">200.000</b>
+            <div style="position: relative">VND</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
